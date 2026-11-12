@@ -128,8 +128,8 @@ Python 3.11 또는 3.12를 권장합니다.
 ### 1. 저장소 내려받기
 
 ```bash
-git clone https://github.com/codeit-AI12-part4-dh/project.git
-cd project
+git clone https://github.com/202030312/codeit-AI12-part4-dh.git
+cd codeit-AI12-part4-dh
 ```
 
 ### 2. 가상환경과 패키지 설치
