@@ -46,7 +46,7 @@ SNS 이미지를 디자인하는 데 많은 시간과 비용을 사용합니다.
 GitHub 공개본은 최종 앱 실행 코드와 기능별 최종 실험 자료를 다음 구조로 정리합니다.
 
 ```bash
-project/
+codeit-AI12-part4-dh/
 ├── app.py                         # 네 가지 기능을 제공하는 Streamlit 앱
 ├── src/
 │   ├── features/
