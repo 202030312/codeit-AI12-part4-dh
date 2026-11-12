@@ -1,0 +1,97 @@
+{
+  "experiment_date": "2026-11-11",
+  "experiment": "v0.3.2_unseen_test_sources_final_6_cases",
+  "prompt_version": "reference_image_edit_v0.3.2-ko",
+  "goal": "개발에 사용하지 않은 테스트 이미지에서 다양한 카페 광고 요청의 반영도를 최종 확인",
+  "fixed_conditions": {
+    "source_manifest": "output/imagegen/advertising_image_2/edits/ad_concepts/test_sources_6_v0_3_2_requests.json",
+    "input_images": "미사용 AI 생성 테스트 원본 6장",
+    "user_requests": "상품 보존 3건과 상품 교체 3건으로 구성한 다양한 소상공인 카페 요청",
+    "model": "gpt-image-2.5-sunburst",
+    "size": "1024x1024",
+    "quality": "medium",
+    "output_format": "png"
+  },
+  "cases": [
+    {
+      "id": "T01",
+      "category": "음료",
+      "variant": "preserve_product_camera_change",
+      "concept": "오후 햇살의 말차라떼",
+      "input_image": "output/imagegen/advertising_image_2/references/test/T01_matcha_latte.png",
+      "request": "말차라떼와 유리잔은 그대로 두고 위에서 45도 내려다본 구도로 바꿔주세요. 밝은 오후 햇살이 드는 테이블에 놓고 오른쪽 위는 문구를 넣을 수 있게 비워주세요.",
+      "request_sha256_prefix": "95ba1c66f352",
+      "output_image": "T01_matcha_latte_angle_ad.png",
+      "qa_status": "pass",
+      "qa_note": "말차라떼와 유리잔이 보존됐고 촬영 시점이 45도 하향 구도로 바뀌었다. 오른쪽 위 카피 공간과 오후 햇살도 반영됐다."
+    },
+    {
+      "id": "T02",
+      "category": "음료",
+      "variant": "preserve_product_scene_edit",
+      "concept": "비 오는 저녁의 핫초코",
+      "input_image": "output/imagegen/advertising_image_2/references/test/T02_hot_chocolate.png",
+      "request": "비 오는 저녁에 올릴 핫초코 홍보 사진으로 만들어주세요. 핫초코와 머그컵은 그대로 두고 창가에 빗방울이 보이는 따뜻한 카페 분위기로 바꿔주세요. 왼쪽 위에는 문구를 넣을 자리를 비워주세요.",
+      "request_sha256_prefix": "3e79a013630d",
+      "output_image": "T02_rainy_evening_hot_chocolate_ad.png",
+      "qa_status": "partial",
+      "qa_note": "핫초코와 머그컵 보존, 빗방울 창문과 따뜻한 저녁 분위기는 반영됐다. 다만 왼쪽 위에 램프와 식물이 남아 카피 공간이 충분히 단순하지 않다."
+    },
+    {
+      "id": "T03",
+      "category": "디저트",
+      "variant": "replace_product",
+      "concept": "블루베리 치즈케이크",
+      "input_image": "output/imagegen/advertising_image_2/references/test/T03_fruit_tart.png",
+      "request": "과일 타르트를 블루베리 치즈케이크 한 조각으로 바꿔주세요. 여러 과일은 없애고 치즈케이크 단면과 블루베리 토핑이 잘 보이게 해주세요. 접시는 그대로 사용해주세요.",
+      "request_sha256_prefix": "65a3fe55666d",
+      "output_image": "T03_blueberry_cheesecake_ad.png",
+      "qa_status": "pass",
+      "qa_note": "여러 과일과 타르트 구조가 제거되고 치즈케이크 단면과 블루베리 토핑이 명확하다. 원본 접시가 유지됐다."
+    },
+    {
+      "id": "T04",
+      "category": "디저트",
+      "variant": "replace_product",
+      "concept": "여름 한정 딸기빙수",
+      "input_image": "output/imagegen/advertising_image_2/references/test/T04_mango_bingsu.png",
+      "request": "망고빙수를 여름 한정 딸기빙수로 바꿔주세요. 망고는 남기지 말고 생딸기 조각과 딸기 소스가 눈꽃 얼음 위에 보이게 해주세요. 그릇과 숟가락은 그대로 사용하고 전체 분위기는 시원하고 밝게 만들어주세요.",
+      "request_sha256_prefix": "71a35615a8bd",
+      "output_image": "T04_strawberry_bingsu_ad.png",
+      "qa_status": "pass",
+      "qa_note": "망고가 남지 않았고 생딸기와 딸기 소스가 눈꽃 얼음 위에 분명하다. 원본 그릇과 숟가락, 밝은 카페 장면이 유지됐다."
+    },
+    {
+      "id": "T05",
+      "category": "빵",
+      "variant": "replace_product",
+      "concept": "햄치즈 크루아상 샌드위치",
+      "input_image": "output/imagegen/advertising_image_2/references/test/T05_bagel_sandwich.png",
+      "request": "배달앱에 올릴 사진이 필요해요. 베이글 샌드위치를 햄치즈 크루아상 샌드위치로 바꾸고, 베이글 모양은 남기지 말아주세요. 결이 살아 있는 크루아상 사이에 햄, 치즈와 채소가 잘 보이도록 상품을 조금 더 크게 보여주세요. 접시는 그대로 사용해주세요.",
+      "request_sha256_prefix": "c5019f12bddb",
+      "output_image": "T05_croissant_sandwich_ad.png",
+      "qa_status": "pass",
+      "qa_note": "베이글 형태가 완전히 제거되고 결이 선명한 크루아상과 햄, 치즈, 채소가 크게 표현됐다. 원본 접시가 유지됐다."
+    },
+    {
+      "id": "T06",
+      "category": "빵",
+      "variant": "preserve_product_package_change",
+      "concept": "단팥빵 선물 세트",
+      "input_image": "output/imagegen/advertising_image_2/references/test/T06_red_bean_buns.png",
+      "request": "단팥빵 세 개는 지금 모습 그대로 살려서 작은 선물 세트 사진으로 만들어주세요. 나무 쟁반 대신 크라프트 선물 상자에 담고 밝고 정갈한 느낌으로 바꿔주세요. 오른쪽에는 선물 안내 문구를 넣을 수 있게 공간을 비워주세요.",
+      "request_sha256_prefix": "3d4ff796813d",
+      "output_image": "T06_red_bean_bun_gift_set_ad.png",
+      "qa_status": "pass",
+      "qa_note": "단팥빵 세 개와 잘린 단면이 보존됐고 나무 쟁반이 크라프트 선물 상자로 교체됐다. 오른쪽 카피 공간이 충분히 확보됐다."
+    }
+  ],
+  "result": "manual_review_complete",
+  "qa_summary": {
+    "pass": 5,
+    "partial": 1,
+    "fail": 0,
+    "retry_count": 0
+  },
+  "comparison_sheet": "source_result_sheet.png"
+}

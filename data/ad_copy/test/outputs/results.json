@@ -1,0 +1,3022 @@
+{
+  "generated_at": "2026-11-12T11:35:04+09:00",
+  "pipeline_version": "gemini-visual-v1.1+gpt-copy-v1.10.18",
+  "visual_model_id": "gemini-3.5-flash-lite",
+  "copy_model_id": "gpt-6-luna",
+  "total": 12,
+  "completed": 12,
+  "complete": true,
+  "records": [
+    {
+      "case_id": "test_bread_cream_brioche",
+      "category": "bread",
+      "image_path": "samples/dataset/test/bread/cream_brioche_windowlight.png",
+      "fixed_input": {
+        "store_name": "매일 굽는 오후",
+        "product_name": "크림 브리오슈 번",
+        "price": "4,800원",
+        "features": "부드러운 브리오슈와 크림의 조합",
+        "promotion": null,
+        "tone": "따뜻하고 친근하게",
+        "copy_request": "출근길에 가볍게 즐기는 간식 상황을 담고, 메뉴명과 크림의 조합을 자연스럽게 강조해 주세요.",
+        "generation_mode": "headline_and_subcopy",
+        "promotion_copy_mode": "badge_only"
+      },
+      "visual_extraction": {
+        "model_id": "gemini-3.5-flash-lite",
+        "prompt_version": "gemini_visual_facts_v1.1.0-korean-retry",
+        "status": "extracted",
+        "verified_facts": [
+          {
+            "id": "v1",
+            "category": "product_type",
+            "value": "빵",
+            "confidence": "high"
+          },
+          {
+            "id": "v2",
+            "category": "shape",
+            "value": "둥근 형태",
+            "confidence": "high"
+          },
+          {
+            "id": "v3",
+            "category": "color",
+            "value": "갈색",
+            "confidence": "high"
+          },
+          {
+            "id": "v4",
+            "category": "visible_component",
+            "value": "흰색 크림",
+            "confidence": "high"
+          },
+          {
+            "id": "v5",
+            "category": "visible_component",
+            "value": "하얀색 가루",
+            "confidence": "high"
+          },
+          {
+            "id": "v6",
+            "category": "count",
+            "value": "한 개",
+            "confidence": "high"
+          },
+          {
+            "id": "v7",
+            "category": "container",
+            "value": "접시",
+            "confidence": "high"
+          },
+          {
+            "id": "v8",
+            "category": "arrangement",
+            "value": "빵 사이에 크림이 채워짐",
+            "confidence": "high"
+          }
+        ],
+        "rejected_observations": [],
+        "excluded_inferences": [
+          "부드러운 식감",
+          "달콤한 맛",
+          "신선한 재료",
+          "고소한 풍미"
+        ],
+        "notice": null,
+        "raw_output": "{\n  \"observations\": [\n    {\n      \"category\": \"product_type\",\n      \"value\": \"빵\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"shape\",\n      \"value\": \"둥근 형태\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"color\",\n      \"value\": \"갈색\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"흰색 크림\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"하얀색 가루\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"count\",\n      \"value\": \"한 개\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"container\",\n      \"value\": \"접시\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"arrangement\",\n      \"value\": \"빵 사이에 크림이 채워짐\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"excluded_inferences\": [\n    \"부드러운 식감\",\n    \"달콤한 맛\",\n    \"신선한 재료\",\n    \"고소한 풍미\"\n  ]\n}"
+      },
+      "copy_generation": {
+        "model_id": "gpt-6-luna",
+        "prompt_version": "openai_copy_v1.10.18-request-aware-partial-recovery",
+        "status": "generated",
+        "generation_mode": "headline_and_subcopy",
+        "attempts": 1,
+        "notice": "상품 사실과 요청 맥락을 함께 반영하고 의미 기반 사실성·자연스러움 검증을 통과한 후보만 선택했습니다.",
+        "copies": [
+          {
+            "headline": "출근길, 가볍게 한입",
+            "body": "부드러운 브리오슈에 크림을 더한 간식이에요",
+            "hashtags": [
+              "#크림브리오슈번",
+              "#매일굽는오후"
+            ]
+          },
+          {
+            "headline": "바쁜 아침에도 반가운 간식",
+            "body": "브리오슈와 크림의 부드러운 조합을 즐겨보세요",
+            "hashtags": [
+              "#크림브리오슈번",
+              "#매일굽는오후"
+            ]
+          }
+        ],
+        "first_attempt_validation_issues": [],
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "raw_image_sent": false,
+            "visual_caption_sent_to_copy_model": false,
+            "filtered_visual_facts_sent": [
+              {
+                "category": "visible_component",
+                "value": "흰색 크림"
+              }
+            ],
+            "message_cardinality": 1,
+            "raw_output": "{\"options\":[{\"headline\":\"부드러운 브리오슈와 크림\",\"body\":\"출근길 간식으로 가볍게 즐겨요.\"},{\"headline\":\"출근길, 가볍게 한입\",\"body\":\"부드러운 브리오슈에 크림을 더한 간식이에요.\"},{\"headline\":\"바쁜 아침에도 반가운 간식\",\"body\":\"브리오슈와 크림의 부드러운 조합을 즐겨보세요.\"},{\"headline\":\"오늘 아침 간식은 편안하게\",\"body\":\"부드러운 브리오슈와 크림이 함께해요.\"}]}",
+            "usage": {
+              "input_tokens": 712,
+              "cached_input_tokens": 0,
+              "output_tokens": 143,
+              "reasoning_tokens": 0,
+              "total_tokens": 855
+            },
+            "local_qc": [
+              {
+                "index": 1,
+                "headline": "부드러운 브리오슈와 크림",
+                "body": "출근길 간식으로 가볍게 즐겨요",
+                "issues": []
+              },
+              {
+                "index": 2,
+                "headline": "출근길, 가볍게 한입",
+                "body": "부드러운 브리오슈에 크림을 더한 간식이에요",
+                "issues": []
+              },
+              {
+                "index": 3,
+                "headline": "바쁜 아침에도 반가운 간식",
+                "body": "브리오슈와 크림의 부드러운 조합을 즐겨보세요",
+                "issues": []
+              },
+              {
+                "index": 4,
+                "headline": "오늘 아침 간식은 편안하게",
+                "body": "부드러운 브리오슈와 크림이 함께해요",
+                "issues": []
+              }
+            ],
+            "naturalness_judge": [
+              {
+                "index": 1,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 2,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "확인된 조합과 출근길 간식 상황은 담았지만, 조합을 그대로 설명하는 데 그쳐 광고 메시지로서의 매력은 약합니다."
+              },
+              {
+                "index": 2,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "출근길에 가볍게 즐기는 상황이 잘 드러나고 따뜻한 말투도 자연스럽습니다. 브리오슈와 크림의 조합을 구체적으로 강조합니다."
+              },
+              {
+                "index": 3,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "바쁜 아침의 간식 상황과 부드러운 조합을 친근하게 제안합니다. 다만 ‘가볍게’ 즐기는 요청은 직접 드러나지 않습니다."
+              },
+              {
+                "index": 4,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 3,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "아침 간식과 브리오슈·크림의 조합을 따뜻하게 표현했지만, 출근길에 가볍게 즐기는 상황은 다소 약합니다."
+              }
+            ],
+            "judge_usage": {
+              "input_tokens": 558,
+              "cached_input_tokens": 0,
+              "output_tokens": 338,
+              "reasoning_tokens": 0,
+              "total_tokens": 896
+            },
+            "qualified_count": 3,
+            "accepted_total": 3
+          }
+        ]
+      },
+      "final_validation_issues": [],
+      "checks": {
+        "fact_preservation_pass": true,
+        "duplicate_pass": true,
+        "length_pass": true,
+        "naturalness_rule_pass": true,
+        "final_validator_pass": true,
+        "overall_pass": true
+      },
+      "elapsed_seconds": 20.59,
+      "error": null
+    },
+    {
+      "case_id": "test_bread_olive",
+      "category": "bread",
+      "image_path": "samples/dataset/test/bread/olive_bread.png",
+      "fixed_input": {
+        "store_name": "매일 굽는 오후",
+        "product_name": "올리브빵",
+        "price": "4,500원",
+        "features": "올리브가 들어간 담백한 빵",
+        "promotion": null,
+        "tone": "담백하고 신뢰감 있게",
+        "copy_request": "과장 없이 올리브와 담백한 풍미가 먼저 느껴지도록 짧게 작성해 주세요.",
+        "generation_mode": "headline_and_subcopy",
+        "promotion_copy_mode": "badge_only"
+      },
+      "visual_extraction": {
+        "model_id": "gemini-3.5-flash-lite",
+        "prompt_version": "gemini_visual_facts_v1.1.0-korean-retry",
+        "status": "extracted",
+        "verified_facts": [
+          {
+            "id": "v1",
+            "category": "product_type",
+            "value": "빵",
+            "confidence": "high"
+          },
+          {
+            "id": "v2",
+            "category": "shape",
+            "value": "길쭉한 타원형",
+            "confidence": "high"
+          },
+          {
+            "id": "v3",
+            "category": "color",
+            "value": "갈색",
+            "confidence": "high"
+          },
+          {
+            "id": "v4",
+            "category": "visible_component",
+            "value": "흰색 가루",
+            "confidence": "high"
+          },
+          {
+            "id": "v5",
+            "category": "visible_component",
+            "value": "검은색 열매 조각",
+            "confidence": "high"
+          },
+          {
+            "id": "v6",
+            "category": "count",
+            "value": "빵 한 개",
+            "confidence": "high"
+          },
+          {
+            "id": "v7",
+            "category": "arrangement",
+            "value": "나무 탁자 위에 놓임",
+            "confidence": "high"
+          }
+        ],
+        "rejected_observations": [],
+        "excluded_inferences": [
+          "바삭한 식감",
+          "고소한 맛",
+          "방금 구워냄",
+          "올리브의 원산지"
+        ],
+        "notice": null,
+        "raw_output": "{\n  \"observations\": [\n    {\n      \"category\": \"product_type\",\n      \"value\": \"빵\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"shape\",\n      \"value\": \"길쭉한 타원형\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"color\",\n      \"value\": \"갈색\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"흰색 가루\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"검은색 열매 조각\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"count\",\n      \"value\": \"빵 한 개\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"arrangement\",\n      \"value\": \"나무 탁자 위에 놓임\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"excluded_inferences\": [\n    \"바삭한 식감\",\n    \"고소한 맛\",\n    \"방금 구워냄\",\n    \"올리브의 원산지\"\n  ]\n}"
+      },
+      "copy_generation": {
+        "model_id": "gpt-6-luna",
+        "prompt_version": "openai_copy_v1.10.18-request-aware-partial-recovery",
+        "status": "fallback",
+        "generation_mode": "headline_and_subcopy",
+        "attempts": 2,
+        "notice": "모델 후보가 최종 검증을 통과하지 못해 상품 사실과 허용된 요청 맥락을 결합한 fallback을 사용했습니다.",
+        "copies": [
+          {
+            "headline": "오늘을 위한 작은 즐거움",
+            "body": "올리브가 들어간 담백한 빵",
+            "hashtags": [
+              "#올리브빵",
+              "#매일굽는오후"
+            ]
+          },
+          {
+            "headline": "천천히 즐기는 기분 좋은 시간",
+            "body": "올리브가 들어간 담백한 빵",
+            "hashtags": [
+              "#올리브빵",
+              "#매일굽는오후"
+            ]
+          }
+        ],
+        "first_attempt_validation_issues": [
+          "SAME_CLAIM_REPEATED",
+          "UNNECESSARY_SUBCOPY",
+          "SAME_CLAIM_REPEATED",
+          "UNNECESSARY_SUBCOPY",
+          "UNSUPPORTED_SENSORY_CLAIM",
+          "SAME_CLAIM_REPEATED",
+          "UNNECESSARY_SUBCOPY",
+          "SAME_CLAIM_REPEATED",
+          "UNNECESSARY_SUBCOPY",
+          "UNSUPPORTED_SENSORY_CLAIM"
+        ],
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "raw_image_sent": false,
+            "visual_caption_sent_to_copy_model": false,
+            "filtered_visual_facts_sent": [],
+            "message_cardinality": 1,
+            "raw_output": "{\"options\":[{\"headline\":\"올리브를 담백하게\",\"body\":\"올리브가 들어간 담백한 빵입니다.\"},{\"headline\":\"담백한 풍미를 먼저\",\"body\":\"올리브를 더한 빵을 짧고 간결하게 즐겨보세요.\"},{\"headline\":\"과장 없이 담백하게\",\"body\":\"올리브가 들어간 빵의 담백한 맛을 전합니다.\"},{\"headline\":\"올리브를 담은 빵\",\"body\":\"담백한 풍미를 차분하게 담았습니다.\"}]}",
+            "usage": {
+              "input_tokens": 702,
+              "cached_input_tokens": 0,
+              "output_tokens": 128,
+              "reasoning_tokens": 0,
+              "total_tokens": 830
+            },
+            "local_qc": [
+              {
+                "index": 1,
+                "headline": "올리브를 담백하게",
+                "body": "올리브가 들어간 담백한 빵입니다",
+                "issues": [
+                  "SAME_CLAIM_REPEATED",
+                  "UNNECESSARY_SUBCOPY"
+                ]
+              },
+              {
+                "index": 2,
+                "headline": "담백한 풍미를 먼저",
+                "body": "올리브를 더한 빵을 짧고 간결하게 즐겨보세요",
+                "issues": [
+                  "SAME_CLAIM_REPEATED",
+                  "UNNECESSARY_SUBCOPY",
+                  "UNSUPPORTED_SENSORY_CLAIM"
+                ]
+              },
+              {
+                "index": 3,
+                "headline": "과장 없이 담백하게",
+                "body": "올리브가 들어간 빵의 담백한 맛을 전합니다",
+                "issues": [
+                  "SAME_CLAIM_REPEATED",
+                  "UNNECESSARY_SUBCOPY"
+                ]
+              },
+              {
+                "index": 4,
+                "headline": "올리브를 담은 빵",
+                "body": "담백한 풍미를 차분하게 담았습니다",
+                "issues": [
+                  "SAME_CLAIM_REPEATED",
+                  "UNNECESSARY_SUBCOPY",
+                  "UNSUPPORTED_SENSORY_CLAIM"
+                ]
+              }
+            ],
+            "naturalness_judge": [
+              {
+                "index": 1,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 2,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "올리브와 담백함을 앞세우고 확인된 특징에 충실하지만, 부제는 상품 특징을 그대로 설명하는 데 그쳐 광고성이 약합니다."
+              },
+              {
+                "index": 2,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 3,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "담백한 풍미를 먼저 제시해 요청을 반영했습니다. 다만 ‘짧고 간결하게 즐겨보세요’는 어색하고 상품 특징을 구체적으로 전달하지 않습니다."
+              },
+              {
+                "index": 3,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 2,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "과장 없이 담백함을 강조하지만, 부제가 확인된 특징을 설명하는 문장에 머물러 짧은 광고 카피로서의 힘이 약합니다."
+              },
+              {
+                "index": 4,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 3,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "올리브와 빵을 먼저 제시하고 담백한 풍미를 차분하게 강조해 톤과 요청에 잘 맞습니다."
+              }
+            ],
+            "judge_usage": {
+              "input_tokens": 533,
+              "cached_input_tokens": 0,
+              "output_tokens": 325,
+              "reasoning_tokens": 0,
+              "total_tokens": 858
+            },
+            "qualified_count": 0,
+            "accepted_total": 0
+          },
+          {
+            "attempt": 2,
+            "raw_image_sent": false,
+            "visual_caption_sent_to_copy_model": false,
+            "filtered_visual_facts_sent": [],
+            "message_cardinality": 1,
+            "raw_output": "{\"options\":[{\"headline\":\"올리브를 담백하게\",\"body\":\"올리브를 넣어 차분한 풍미를 살린 빵.\"},{\"headline\":\"한입의 담백함\",\"body\":\"올리브가 들어가 부담 없이 즐기는 빵.\"},{\"headline\":\"재료부터 담백하게\",\"body\":\"올리브를 더해 담백한 풍미를 전합니다.\"},{\"headline\":\"올리브의 맛을 담아\",\"body\":\"군더더기 없이 담백하게 구운 빵.\"}]}",
+            "usage": {
+              "input_tokens": 946,
+              "cached_input_tokens": 0,
+              "output_tokens": 123,
+              "reasoning_tokens": 0,
+              "total_tokens": 1069
+            },
+            "local_qc": [
+              {
+                "index": 1,
+                "headline": "올리브를 담백하게",
+                "body": "올리브를 넣어 차분한 풍미를 살린 빵",
+                "issues": [
+                  "SAME_CLAIM_REPEATED",
+                  "UNNECESSARY_SUBCOPY",
+                  "UNSUPPORTED_SENSORY_CLAIM"
+                ]
+              },
+              {
+                "index": 2,
+                "headline": "한입의 담백함",
+                "body": "올리브가 들어가 부담 없이 즐기는 빵",
+                "issues": [
+                  "SAME_CLAIM_REPEATED",
+                  "UNNECESSARY_SUBCOPY"
+                ]
+              },
+              {
+                "index": 3,
+                "headline": "재료부터 담백하게",
+                "body": "올리브를 더해 담백한 풍미를 전합니다",
+                "issues": [
+                  "SAME_CLAIM_REPEATED",
+                  "UNNECESSARY_SUBCOPY",
+                  "UNSUPPORTED_SENSORY_CLAIM"
+                ]
+              },
+              {
+                "index": 4,
+                "headline": "올리브의 맛을 담아",
+                "body": "군더더기 없이 담백하게 구운 빵",
+                "issues": [
+                  "INCOMPLETE_EXPRESSION",
+                  "SAME_CLAIM_REPEATED",
+                  "UNNECESSARY_SUBCOPY"
+                ]
+              }
+            ],
+            "naturalness_judge": [
+              {
+                "index": 1,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 3,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "올리브와 담백함을 짧게 앞세워 요청을 반영했습니다. 다만 ‘올리브를 담백하게’는 의미 연결이 다소 어색하고, 부카피는 특징 설명에 가까워 광고성이 제한적입니다."
+              },
+              {
+                "index": 2,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 2,
+                "grounded": false,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "담백함을 강조하지만 올리브가 먼저 드러나지 않습니다. ‘부담 없이’는 확인된 특징을 넘어선 효능·경험 주장이고, 부카피도 설명형입니다."
+              },
+              {
+                "index": 3,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 2,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "올리브와 담백한 풍미를 담았지만 요청한 ‘올리브가 먼저’라는 우선순위가 약합니다. 부카피는 특징을 그대로 설명하는 문구에 가깝습니다."
+              },
+              {
+                "index": 4,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 3,
+                "grounded": false,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "올리브를 먼저 강조하고 담백한 톤을 유지합니다. 다만 ‘군더더기 없이’와 ‘구운’은 확인된 상품 특징으로 뒷받침되지 않습니다."
+              }
+            ],
+            "judge_usage": {
+              "input_tokens": 528,
+              "cached_input_tokens": 0,
+              "output_tokens": 368,
+              "reasoning_tokens": 0,
+              "total_tokens": 896
+            },
+            "qualified_count": 0,
+            "accepted_total": 0
+          }
+        ]
+      },
+      "final_validation_issues": [],
+      "checks": {
+        "fact_preservation_pass": true,
+        "duplicate_pass": true,
+        "length_pass": true,
+        "naturalness_rule_pass": true,
+        "final_validator_pass": true,
+        "overall_pass": true
+      },
+      "elapsed_seconds": 27.95,
+      "error": null
+    },
+    {
+      "case_id": "test_bread_red_bean",
+      "category": "bread",
+      "image_path": "samples/dataset/test/bread/red_bean_bun.png",
+      "fixed_input": {
+        "store_name": "동네빵 연구소",
+        "product_name": "단팥빵",
+        "price": "3,000원",
+        "features": "달콤한 팥소와 부드러운 빵",
+        "promotion": "3개 구매 시 1개 증정",
+        "tone": "발랄하고 직접적으로",
+        "copy_request": "제목에는 3개 구매 시 1개 증정 행사를 분명히 알리고, 보조 문구에는 팥소와 빵의 조합을 설명해 주세요.",
+        "generation_mode": "headline_and_subcopy",
+        "promotion_copy_mode": "badge_only"
+      },
+      "visual_extraction": {
+        "model_id": "gemini-3.5-flash-lite",
+        "prompt_version": "gemini_visual_facts_v1.1.0-korean-retry",
+        "status": "omitted",
+        "verified_facts": [],
+        "rejected_observations": [],
+        "excluded_inferences": [],
+        "notice": "시각 정보 추출을 생략했습니다: ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+        "raw_output": ""
+      },
+      "copy_generation": {
+        "model_id": "gpt-6-luna",
+        "prompt_version": "openai_copy_v1.10.18-request-aware-partial-recovery",
+        "status": "retried",
+        "generation_mode": "headline_and_subcopy",
+        "attempts": 2,
+        "notice": "상품 사실과 요청 맥락을 함께 반영하고 의미 기반 사실성·자연스러움 검증을 통과한 후보만 선택했습니다.",
+        "copies": [
+          {
+            "headline": "한입, 기분 좋게",
+            "body": "달콤한 팥소를 부드러운 빵이 포근히 감싸요",
+            "hashtags": [
+              "#단팥빵",
+              "#동네빵연구소"
+            ]
+          },
+          {
+            "headline": "발랄하게 즐기는 조합",
+            "body": "달콤한 팥소와 부드러운 빵이 어우러져요",
+            "hashtags": [
+              "#단팥빵",
+              "#동네빵연구소"
+            ]
+          }
+        ],
+        "first_attempt_validation_issues": [
+          "INCOMPLETE_EXPRESSION",
+          "SAME_CLAIM_REPEATED",
+          "SAME_CLAIM_REPEATED",
+          "SAME_CLAIM_REPEATED"
+        ],
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "raw_image_sent": false,
+            "visual_caption_sent_to_copy_model": false,
+            "filtered_visual_facts_sent": [],
+            "message_cardinality": 2,
+            "raw_output": "{\"options\":[{\"headline\":\"달콤함은 팥소에서!\",\"body\":\"부드러운 빵과 달콤한 팥소가 잘 어울려요.\"},{\"headline\":\"한입, 기분 좋게!\",\"body\":\"달콤한 팥소를 부드러운 빵이 포근히 감싸요.\"},{\"headline\":\"팥소와 빵, 찰떡 조합!\",\"body\":\"부드러운 빵에 달콤한 팥소를 더했어요.\"},{\"headline\":\"부드럽게 감싼 달콤함\",\"body\":\"달콤한 팥소와 부드러운 빵의 조합을 즐겨요.\"}]}",
+            "usage": {
+              "input_tokens": 699,
+              "cached_input_tokens": 0,
+              "output_tokens": 161,
+              "reasoning_tokens": 0,
+              "total_tokens": 860
+            },
+            "local_qc": [
+              {
+                "index": 1,
+                "headline": "달콤함은 팥소에서",
+                "body": "부드러운 빵과 달콤한 팥소가 잘 어울려요",
+                "issues": [
+                  "INCOMPLETE_EXPRESSION",
+                  "SAME_CLAIM_REPEATED"
+                ]
+              },
+              {
+                "index": 2,
+                "headline": "한입, 기분 좋게",
+                "body": "달콤한 팥소를 부드러운 빵이 포근히 감싸요",
+                "issues": []
+              },
+              {
+                "index": 3,
+                "headline": "팥소와 빵, 찰떡 조합",
+                "body": "부드러운 빵에 달콤한 팥소를 더했어요",
+                "issues": [
+                  "SAME_CLAIM_REPEATED"
+                ]
+              },
+              {
+                "index": 4,
+                "headline": "부드럽게 감싼 달콤함",
+                "body": "달콤한 팥소와 부드러운 빵의 조합을 즐겨요",
+                "issues": [
+                  "SAME_CLAIM_REPEATED"
+                ]
+              }
+            ],
+            "naturalness_judge": [
+              {
+                "index": 1,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 3,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "발랄하고 직접적인 톤은 다소 약하지만, 보조 문구가 확인된 팥소와 빵의 조합을 자연스럽게 설명합니다."
+              },
+              {
+                "index": 2,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "‘한입, 기분 좋게’가 짧고 발랄하며, 보조 문구도 팥소와 빵의 조합을 감싸는 이미지로 직접 설명합니다. ‘포근히’는 확인된 특징을 벗어나는 정도가 크지 않습니다."
+              },
+              {
+                "index": 3,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 5,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "‘찰떡 조합’이 발랄하고 직접적이며, 보조 문구가 달콤한 팥소와 부드러운 빵의 조합을 간결하게 설명합니다."
+              },
+              {
+                "index": 4,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 3,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "확인된 맛과 식감을 담고 보조 문구도 조합을 설명하지만, ‘즐겨요’가 다소 일반적인 권유라 발랄하고 직접적인 인상은 상대적으로 약합니다."
+              }
+            ],
+            "judge_usage": {
+              "input_tokens": 558,
+              "cached_input_tokens": 0,
+              "output_tokens": 365,
+              "reasoning_tokens": 0,
+              "total_tokens": 923
+            },
+            "qualified_count": 1,
+            "accepted_total": 1
+          },
+          {
+            "attempt": 2,
+            "raw_image_sent": false,
+            "visual_caption_sent_to_copy_model": false,
+            "filtered_visual_facts_sent": [],
+            "message_cardinality": 2,
+            "raw_output": "{\"options\":[{\"headline\":\"팥소와 빵의 찰떡 조합\",\"body\":\"달콤한 팥소를 부드러운 빵이 감싸요.\"},{\"headline\":\"달콤함을 품은 한입\",\"body\":\"부드러운 빵과 달콤한 팥소가 함께해요.\"},{\"headline\":\"발랄하게 즐기는 조합\",\"body\":\"달콤한 팥소와 부드러운 빵이 어우러져요.\"},{\"headline\":\"오늘의 한입, 팥소와 빵\",\"body\":\"부드러운 빵 속 달콤한 팥소를 만나보세요.\"}]}",
+            "usage": {
+              "input_tokens": 846,
+              "cached_input_tokens": 0,
+              "output_tokens": 153,
+              "reasoning_tokens": 0,
+              "total_tokens": 999
+            },
+            "local_qc": [
+              {
+                "index": 1,
+                "headline": "팥소와 빵의 찰떡 조합",
+                "body": "달콤한 팥소를 부드러운 빵이 감싸요",
+                "issues": [
+                  "SAME_CLAIM_REPEATED"
+                ]
+              },
+              {
+                "index": 2,
+                "headline": "달콤함을 품은 한입",
+                "body": "부드러운 빵과 달콤한 팥소가 함께해요",
+                "issues": [
+                  "SAME_CLAIM_REPEATED"
+                ]
+              },
+              {
+                "index": 3,
+                "headline": "발랄하게 즐기는 조합",
+                "body": "달콤한 팥소와 부드러운 빵이 어우러져요",
+                "issues": []
+              },
+              {
+                "index": 4,
+                "headline": "오늘의 한입, 팥소와 빵",
+                "body": "부드러운 빵 속 달콤한 팥소를 만나보세요",
+                "issues": [
+                  "SAME_CLAIM_REPEATED"
+                ]
+              }
+            ],
+            "naturalness_judge": [
+              {
+                "index": 1,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "요청한 팥소와 빵의 조합을 짧고 직접적으로 강조하며, 보조 문구도 확인된 특징에 맞습니다."
+              },
+              {
+                "index": 2,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "달콤함과 부드러움을 자연스럽게 전달하고 조합도 설명하지만, 발랄하고 직접적인 톤은 다소 약합니다."
+              },
+              {
+                "index": 3,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 3,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "보조 문구는 요청한 조합과 확인된 특징을 잘 담았지만, 헤드라인이 다소 추상적이고 발랄한 인상을 충분히 주지 않습니다."
+              },
+              {
+                "index": 4,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "팥소와 빵을 직접 제시하고 보조 문구로 조합을 설명해 요청에 부합합니다. 다만 발랄한 톤은 약합니다."
+              }
+            ],
+            "judge_usage": {
+              "input_tokens": 553,
+              "cached_input_tokens": 0,
+              "output_tokens": 322,
+              "reasoning_tokens": 0,
+              "total_tokens": 875
+            },
+            "qualified_count": 1,
+            "accepted_total": 2
+          }
+        ]
+      },
+      "final_validation_issues": [],
+      "checks": {
+        "fact_preservation_pass": true,
+        "duplicate_pass": true,
+        "length_pass": true,
+        "naturalness_rule_pass": true,
+        "final_validator_pass": true,
+        "overall_pass": true
+      },
+      "elapsed_seconds": 24.78,
+      "error": null
+    },
+    {
+      "case_id": "test_bread_salt",
+      "category": "bread",
+      "image_path": "samples/dataset/test/bread/salt_bread.png",
+      "fixed_input": {
+        "store_name": "동네빵 연구소",
+        "product_name": "소금빵",
+        "price": "3,200원",
+        "features": "고소한 버터 풍미와 담백한 소금 맛",
+        "promotion": null,
+        "tone": "짧고 감각적으로",
+        "copy_request": "퇴근길 간식 상황에 어울리게 작성하되 제목은 16자 이내로 만들어 주세요.",
+        "generation_mode": "headline_and_subcopy",
+        "promotion_copy_mode": "badge_only"
+      },
+      "visual_extraction": {
+        "model_id": "gemini-3.5-flash-lite",
+        "prompt_version": "gemini_visual_facts_v1.1.0-korean-retry",
+        "status": "extracted",
+        "verified_facts": [
+          {
+            "id": "v1",
+            "category": "product_type",
+            "value": "빵",
+            "confidence": "high"
+          },
+          {
+            "id": "v2",
+            "category": "count",
+            "value": "2개",
+            "confidence": "high"
+          },
+          {
+            "id": "v3",
+            "category": "color",
+            "value": "갈색",
+            "confidence": "high"
+          },
+          {
+            "id": "v4",
+            "category": "shape",
+            "value": "초승달 모양",
+            "confidence": "high"
+          },
+          {
+            "id": "v5",
+            "category": "container",
+            "value": "접시",
+            "confidence": "high"
+          },
+          {
+            "id": "v6",
+            "category": "visible_component",
+            "value": "소금 결정",
+            "confidence": "high"
+          },
+          {
+            "id": "v7",
+            "category": "arrangement",
+            "value": "앞뒤로 나란히 놓임",
+            "confidence": "high"
+          }
+        ],
+        "rejected_observations": [],
+        "excluded_inferences": [
+          "바삭한 식감",
+          "고소한 맛",
+          "방금 구워냄",
+          "짭짤한 풍미"
+        ],
+        "notice": null,
+        "raw_output": "{\n  \"observations\": [\n    {\n      \"category\": \"product_type\",\n      \"value\": \"빵\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"count\",\n      \"value\": \"2개\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"color\",\n      \"value\": \"갈색\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"shape\",\n      \"value\": \"초승달 모양\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"container\",\n      \"value\": \"접시\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"소금 결정\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"arrangement\",\n      \"value\": \"앞뒤로 나란히 놓임\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"excluded_inferences\": [\n    \"바삭한 식감\",\n    \"고소한 맛\",\n    \"방금 구워냄\",\n    \"짭짤한 풍미\"\n  ]\n}"
+      },
+      "copy_generation": {
+        "model_id": "gpt-6-luna",
+        "prompt_version": "openai_copy_v1.10.18-request-aware-partial-recovery",
+        "status": "retried",
+        "generation_mode": "headline_and_subcopy",
+        "attempts": 2,
+        "notice": "상품 사실과 요청 맥락을 함께 반영하고 의미 기반 사실성·자연스러움 검증을 통과한 후보만 선택했습니다.",
+        "copies": [
+          {
+            "headline": "퇴근길 한입",
+            "body": "고소한 버터 풍미에 담백한 소금 맛을 더했어요",
+            "hashtags": [
+              "#소금빵",
+              "#동네빵연구소"
+            ]
+          },
+          {
+            "headline": "하루 끝의 간식",
+            "body": "고소한 버터 풍미에 담백한 소금 맛을 담았어요",
+            "hashtags": [
+              "#소금빵",
+              "#동네빵연구소"
+            ]
+          }
+        ],
+        "first_attempt_validation_issues": [
+          "SAME_CLAIM_REPEATED"
+        ],
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "raw_image_sent": false,
+            "visual_caption_sent_to_copy_model": false,
+            "filtered_visual_facts_sent": [],
+            "message_cardinality": 2,
+            "raw_output": "{\"options\":[{\"headline\":\"버터 풍미로 채우는\",\"body\":\"퇴근길, 고소한 풍미와 담백한 소금 맛을 즐겨요.\"},{\"headline\":\"퇴근길 한입\",\"body\":\"고소한 버터 풍미에 담백한 소금 맛을 더했어요.\"},{\"headline\":\"오늘의 귀갓길\",\"body\":\"고소한 버터 풍미와 담백한 소금 맛, 짧고 감각적인 한입.\"},{\"headline\":\"집으로 가는 길\",\"body\":\"담백한 소금 맛과 고소한 버터 풍미를 함께 즐겨요.\"}]}",
+            "usage": {
+              "input_tokens": 705,
+              "cached_input_tokens": 0,
+              "output_tokens": 146,
+              "reasoning_tokens": 0,
+              "total_tokens": 851
+            },
+            "local_qc": [
+              {
+                "index": 1,
+                "headline": "버터 풍미로 채우는",
+                "body": "퇴근길, 고소한 풍미와 담백한 소금 맛을 즐겨요",
+                "issues": [
+                  "SAME_CLAIM_REPEATED"
+                ]
+              },
+              {
+                "index": 2,
+                "headline": "퇴근길 한입",
+                "body": "고소한 버터 풍미에 담백한 소금 맛을 더했어요",
+                "issues": []
+              },
+              {
+                "index": 3,
+                "headline": "오늘의 귀갓길",
+                "body": "고소한 버터 풍미와 담백한 소금 맛, 짧고 감각적인 한입",
+                "issues": []
+              },
+              {
+                "index": 4,
+                "headline": "집으로 가는 길",
+                "body": "담백한 소금 맛과 고소한 버터 풍미를 함께 즐겨요",
+                "issues": []
+              }
+            ],
+            "naturalness_judge": [
+              {
+                "index": 1,
+                "meaningful": true,
+                "naturalness": 2,
+                "ad_value": 2,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "제목은 연결어 ‘로’로 끝나는 미완성 표현이고, 퇴근길 맥락은 부제에만 약하게 드러납니다. 확인된 풍미만 나열해 짧고 감각적인 광고 문구로는 힘이 약합니다."
+              },
+              {
+                "index": 2,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "‘퇴근길 한입’으로 요청한 상황을 짧게 담았고 제목도 16자 이내입니다. 부제는 확인된 맛을 자연스럽게 전하지만, 감각적인 인상은 다소 평이합니다."
+              },
+              {
+                "index": 3,
+                "meaningful": true,
+                "naturalness": 3,
+                "ad_value": 2,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "귀갓길 상황은 암시하지만 제목이 구체적인 간식 순간으로 이어지지 않습니다. 부제의 ‘짧고 감각적인’은 요청을 그대로 설명하는 메타 표현이고, 맛 특징 나열에 그칩니다."
+              },
+              {
+                "index": 4,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 2,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "제목은 16자 이내이고 귀갓길 상황을 떠올리게 하지만, 부제는 확인된 풍미를 설명하는 데 그쳐 짧고 감각적인 광고 카피로서의 매력이 약합니다."
+              }
+            ],
+            "judge_usage": {
+              "input_tokens": 552,
+              "cached_input_tokens": 0,
+              "output_tokens": 392,
+              "reasoning_tokens": 0,
+              "total_tokens": 944
+            },
+            "qualified_count": 1,
+            "accepted_total": 1
+          },
+          {
+            "attempt": 2,
+            "raw_image_sent": false,
+            "visual_caption_sent_to_copy_model": false,
+            "filtered_visual_facts_sent": [],
+            "message_cardinality": 2,
+            "raw_output": "{\"options\":[{\"headline\":\"퇴근길, 버터 한입\",\"body\":\"고소한 풍미와 담백한 소금 맛이 어우러져요\"},{\"headline\":\"하루 끝의 간식\",\"body\":\"고소한 버터 풍미에 담백한 소금 맛을 담았어요\"},{\"headline\":\"발걸음 멈추는 순간\",\"body\":\"담백한 소금 맛을 고소한 버터 풍미가 감싸요\"},{\"headline\":\"집에 가는 길, 잠깐\",\"body\":\"버터의 고소함과 소금의 담백함을 한입에 즐겨요\"}]}",
+            "usage": {
+              "input_tokens": 991,
+              "cached_input_tokens": 0,
+              "output_tokens": 143,
+              "reasoning_tokens": 0,
+              "total_tokens": 1134
+            },
+            "local_qc": [
+              {
+                "index": 1,
+                "headline": "퇴근길, 버터 한입",
+                "body": "고소한 풍미와 담백한 소금 맛이 어우러져요",
+                "issues": [
+                  "SAME_CLAIM_REPEATED"
+                ]
+              },
+              {
+                "index": 2,
+                "headline": "하루 끝의 간식",
+                "body": "고소한 버터 풍미에 담백한 소금 맛을 담았어요",
+                "issues": []
+              },
+              {
+                "index": 3,
+                "headline": "발걸음 멈추는 순간",
+                "body": "담백한 소금 맛을 고소한 버터 풍미가 감싸요",
+                "issues": []
+              },
+              {
+                "index": 4,
+                "headline": "집에 가는 길, 잠깐",
+                "body": "버터의 고소함과 소금의 담백함을 한입에 즐겨요",
+                "issues": []
+              }
+            ],
+            "naturalness_judge": [
+              {
+                "index": 1,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "퇴근길 상황을 짧고 감각적으로 담았고, 제품 특징도 벗어나지 않습니다. 제목은 16자 이내입니다."
+              },
+              {
+                "index": 2,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "하루 끝 간식이라는 맥락이 자연스럽고, 버터 풍미와 소금 맛을 간결하게 표현했습니다. 제목은 16자 이내입니다."
+              },
+              {
+                "index": 3,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "감각적인 제목과 풍미 표현은 좋지만, 퇴근길 상황이 직접 드러나지는 않습니다. 제목은 16자 이내입니다."
+              },
+              {
+                "index": 4,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "집에 가는 길이라는 상황이 요청에 부합하고 제품 특징도 반영했지만, 제목의 ‘잠깐’이 다소 덜 구체적입니다. 제목은 16자 이내입니다."
+              }
+            ],
+            "judge_usage": {
+              "input_tokens": 553,
+              "cached_input_tokens": 0,
+              "output_tokens": 327,
+              "reasoning_tokens": 0,
+              "total_tokens": 880
+            },
+            "qualified_count": 3,
+            "accepted_total": 4
+          }
+        ]
+      },
+      "final_validation_issues": [],
+      "checks": {
+        "fact_preservation_pass": true,
+        "duplicate_pass": true,
+        "length_pass": true,
+        "naturalness_rule_pass": true,
+        "final_validator_pass": true,
+        "overall_pass": true
+      },
+      "elapsed_seconds": 19.83,
+      "error": null
+    },
+    {
+      "case_id": "test_dessert_fruit_tart",
+      "category": "dessert",
+      "image_path": "samples/dataset/test/desserts/fruit_tart_windowlight.png",
+      "fixed_input": {
+        "store_name": "포근한 조각",
+        "product_name": "과일 타르트",
+        "price": "7,500원",
+        "features": "다채로운 과일과 타르트의 조합",
+        "promotion": null,
+        "tone": "화사하고 감성적으로",
+        "copy_request": "작은 기념일을 위한 디저트라는 느낌과 여러 과일의 화사함을 담아 주세요.",
+        "generation_mode": "headline_and_subcopy",
+        "promotion_copy_mode": "badge_only"
+      },
+      "visual_extraction": {
+        "model_id": "gemini-3.5-flash-lite",
+        "prompt_version": "gemini_visual_facts_v1.1.0-korean-retry",
+        "status": "extracted",
+        "verified_facts": [
+          {
+            "id": "v1",
+            "category": "product_type",
+            "value": "과일 타르트",
+            "confidence": "high"
+          },
+          {
+            "id": "v2",
+            "category": "shape",
+            "value": "원형",
+            "confidence": "high"
+          },
+          {
+            "id": "v3",
+            "category": "container",
+            "value": "접시",
+            "confidence": "high"
+          },
+          {
+            "id": "v4",
+            "category": "visible_component",
+            "value": "딸기 조각",
+            "confidence": "high"
+          },
+          {
+            "id": "v5",
+            "category": "visible_component",
+            "value": "키위 조각",
+            "confidence": "high"
+          },
+          {
+            "id": "v6",
+            "category": "visible_component",
+            "value": "블루베리",
+            "confidence": "high"
+          },
+          {
+            "id": "v7",
+            "category": "visible_component",
+            "value": "감귤 조각",
+            "confidence": "high"
+          },
+          {
+            "id": "v8",
+            "category": "visible_component",
+            "value": "초록색 잎 장식",
+            "confidence": "high"
+          },
+          {
+            "id": "v9",
+            "category": "arrangement",
+            "value": "과일이 타르트 위에 올려져 있음",
+            "confidence": "high"
+          },
+          {
+            "id": "v10",
+            "category": "color",
+            "value": "다양한 색상의 과일",
+            "confidence": "high"
+          }
+        ],
+        "rejected_observations": [],
+        "excluded_inferences": [
+          "상큼한 맛",
+          "달콤한 향",
+          "바삭한 식감",
+          "신선한 재료",
+          "수제 제조 방식"
+        ],
+        "notice": null,
+        "raw_output": "{\n  \"observations\": [\n    {\n      \"category\": \"product_type\",\n      \"value\": \"과일 타르트\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"shape\",\n      \"value\": \"원형\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"container\",\n      \"value\": \"접시\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"딸기 조각\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"키위 조각\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"블루베리\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"감귤 조각\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"초록색 잎 장식\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"arrangement\",\n      \"value\": \"과일이 타르트 위에 올려져 있음\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"color\",\n      \"value\": \"다양한 색상의 과일\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"excluded_inferences\": [\n    \"상큼한 맛\",\n    \"달콤한 향\",\n    \"바삭한 식감\",\n    \"신선한 재료\",\n    \"수제 제조 방식\"\n  ]\n}"
+      },
+      "copy_generation": {
+        "model_id": "gpt-6-luna",
+        "prompt_version": "openai_copy_v1.10.18-request-aware-partial-recovery",
+        "status": "generated",
+        "generation_mode": "headline_and_subcopy",
+        "attempts": 1,
+        "notice": "상품 사실과 요청 맥락을 함께 반영하고 의미 기반 사실성·자연스러움 검증을 통과한 후보만 선택했습니다.",
+        "copies": [
+          {
+            "headline": "작은 기념일, 반짝이는 한 조각",
+            "body": "여러 과일과 타르트가 함께하는 화사한 디저트예요",
+            "hashtags": [
+              "#과일타르트",
+              "#포근한조각"
+            ]
+          },
+          {
+            "headline": "오늘을 조금 더 화사하게",
+            "body": "다채로운 과일이 타르트와 어우러져 작은 기념일에 잘 어울려요",
+            "hashtags": [
+              "#과일타르트",
+              "#포근한조각"
+            ]
+          }
+        ],
+        "first_attempt_validation_issues": [],
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "raw_image_sent": false,
+            "visual_caption_sent_to_copy_model": false,
+            "filtered_visual_facts_sent": [
+              {
+                "category": "product_type",
+                "value": "과일 타르트"
+              },
+              {
+                "category": "visible_component",
+                "value": "딸기 조각"
+              },
+              {
+                "category": "visible_component",
+                "value": "블루베리"
+              },
+              {
+                "category": "visible_component",
+                "value": "초록색 잎 장식"
+              }
+            ],
+            "message_cardinality": 1,
+            "raw_output": "{\"options\":[{\"headline\":\"여러 과일의 화사한 조화\",\"body\":\"다채로운 과일과 타르트가 어우러진 디저트예요.\"},{\"headline\":\"작은 기념일, 반짝이는 한 조각\",\"body\":\"여러 과일과 타르트가 함께하는 화사한 디저트예요.\"},{\"headline\":\"오늘을 조금 더 화사하게\",\"body\":\"다채로운 과일이 타르트와 어우러져 작은 기념일에 잘 어울려요.\"},{\"headline\":\"소소한 축하를 위한 선택\",\"body\":\"타르트와 여러 과일의 조합으로 기념일을 화사하게 채워 보세요.\"}]}",
+            "usage": {
+              "input_tokens": 702,
+              "cached_input_tokens": 0,
+              "output_tokens": 163,
+              "reasoning_tokens": 0,
+              "total_tokens": 865
+            },
+            "local_qc": [
+              {
+                "index": 1,
+                "headline": "여러 과일의 화사한 조화",
+                "body": "다채로운 과일과 타르트가 어우러진 디저트예요",
+                "issues": [
+                  "SAME_CLAIM_REPEATED",
+                  "UNNECESSARY_SUBCOPY"
+                ]
+              },
+              {
+                "index": 2,
+                "headline": "작은 기념일, 반짝이는 한 조각",
+                "body": "여러 과일과 타르트가 함께하는 화사한 디저트예요",
+                "issues": []
+              },
+              {
+                "index": 3,
+                "headline": "오늘을 조금 더 화사하게",
+                "body": "다채로운 과일이 타르트와 어우러져 작은 기념일에 잘 어울려요",
+                "issues": []
+              },
+              {
+                "index": 4,
+                "headline": "소소한 축하를 위한 선택",
+                "body": "타르트와 여러 과일의 조합으로 기념일을 화사하게 채워 보세요",
+                "issues": []
+              }
+            ],
+            "naturalness_judge": [
+              {
+                "index": 1,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 2,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "화사한 과일의 조합은 담았지만, 작은 기념일을 위한 느낌이 없고 특징을 설명하는 문구에 그칩니다."
+              },
+              {
+                "index": 2,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 5,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "작은 기념일과 여러 과일의 화사함을 반영한 짧고 감성적인 문구입니다."
+              },
+              {
+                "index": 3,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 5,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "화사한 분위기와 작은 기념일 상황을 자연스럽게 연결하며, 확인된 특징을 벗어나지 않습니다."
+              },
+              {
+                "index": 4,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 5,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "소소한 축하라는 기념일 맥락과 과일의 화사함을 행동을 유도하는 문구로 담았습니다."
+              }
+            ],
+            "judge_usage": {
+              "input_tokens": 568,
+              "cached_input_tokens": 0,
+              "output_tokens": 295,
+              "reasoning_tokens": 0,
+              "total_tokens": 863
+            },
+            "qualified_count": 3,
+            "accepted_total": 3
+          }
+        ]
+      },
+      "final_validation_issues": [],
+      "checks": {
+        "fact_preservation_pass": true,
+        "duplicate_pass": true,
+        "length_pass": true,
+        "naturalness_rule_pass": true,
+        "final_validator_pass": true,
+        "overall_pass": true
+      },
+      "elapsed_seconds": 20.45,
+      "error": null
+    },
+    {
+      "case_id": "test_dessert_mango_bingsu",
+      "category": "dessert",
+      "image_path": "samples/dataset/test/desserts/mango_bingsu.png",
+      "fixed_input": {
+        "store_name": "포근한 조각",
+        "product_name": "망고 빙수",
+        "price": "12,000원",
+        "features": "망고와 얼음의 시원한 조합",
+        "promotion": "주말 한정 1천 원 할인",
+        "tone": "시원하고 활기차게",
+        "copy_request": "여름 오후의 기분 전환을 강조하고 할인 정보는 과장 없이 한 번만 표현해 주세요.",
+        "generation_mode": "headline_and_subcopy",
+        "promotion_copy_mode": "badge_only"
+      },
+      "visual_extraction": {
+        "model_id": "gemini-3.5-flash-lite",
+        "prompt_version": "gemini_visual_facts_v1.1.0-korean-retry",
+        "status": "extracted",
+        "verified_facts": [
+          {
+            "id": "v1",
+            "category": "product_type",
+            "value": "빙수",
+            "confidence": "high"
+          },
+          {
+            "id": "v2",
+            "category": "color",
+            "value": "노란색 과일 조각",
+            "confidence": "high"
+          },
+          {
+            "id": "v3",
+            "category": "shape",
+            "value": "정육면체 조각",
+            "confidence": "high"
+          },
+          {
+            "id": "v4",
+            "category": "container",
+            "value": "사발",
+            "confidence": "high"
+          },
+          {
+            "id": "v5",
+            "category": "visible_component",
+            "value": "아이스크림 한 덩이",
+            "confidence": "high"
+          },
+          {
+            "id": "v6",
+            "category": "visible_component",
+            "value": "얼음 알갱이",
+            "confidence": "high"
+          },
+          {
+            "id": "v7",
+            "category": "arrangement",
+            "value": "꼭대기에 아이스크림 배치",
+            "confidence": "high"
+          }
+        ],
+        "rejected_observations": [],
+        "excluded_inferences": [
+          "달콤한 맛",
+          "시원함",
+          "신선한 과일",
+          "부드러운 식감",
+          "망고의 원산지"
+        ],
+        "notice": null,
+        "raw_output": "{\n  \"observations\": [\n    {\n      \"category\": \"product_type\",\n      \"value\": \"빙수\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"color\",\n      \"value\": \"노란색 과일 조각\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"shape\",\n      \"value\": \"정육면체 조각\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"container\",\n      \"value\": \"사발\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"아이스크림 한 덩이\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"얼음 알갱이\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"arrangement\",\n      \"value\": \"꼭대기에 아이스크림 배치\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"excluded_inferences\": [\n    \"달콤한 맛\",\n    \"시원함\",\n    \"신선한 과일\",\n    \"부드러운 식감\",\n    \"망고의 원산지\"\n  ]\n}"
+      },
+      "copy_generation": {
+        "model_id": "gpt-6-luna",
+        "prompt_version": "openai_copy_v1.10.18-request-aware-partial-recovery",
+        "status": "retried",
+        "generation_mode": "headline_and_subcopy",
+        "attempts": 2,
+        "notice": "상품 사실과 요청 맥락을 함께 반영하고 의미 기반 사실성·자연스러움 검증을 통과한 후보만 선택했습니다.",
+        "copies": [
+          {
+            "headline": "망고와 얼음, 시원하게 한입",
+            "body": "차가운 조합으로 더위를 식혀 보세요",
+            "hashtags": [
+              "#망고빙수",
+              "#포근한조각"
+            ]
+          },
+          {
+            "headline": "한입에 기분 전환",
+            "body": "망고와 얼음의 시원한 조합을 즐겨 보세요",
+            "hashtags": [
+              "#망고빙수",
+              "#포근한조각"
+            ]
+          }
+        ],
+        "first_attempt_validation_issues": [
+          "SAME_CLAIM_REPEATED",
+          "UNNECESSARY_SUBCOPY",
+          "SAME_CLAIM_REPEATED",
+          "UNNECESSARY_SUBCOPY",
+          "SAME_CLAIM_REPEATED",
+          "UNNECESSARY_SUBCOPY",
+          "INCOMPLETE_EXPRESSION",
+          "SAME_CLAIM_REPEATED",
+          "UNNECESSARY_SUBCOPY"
+        ],
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "raw_image_sent": false,
+            "visual_caption_sent_to_copy_model": false,
+            "filtered_visual_facts_sent": [
+              {
+                "category": "product_type",
+                "value": "빙수"
+              },
+              {
+                "category": "visible_component",
+                "value": "아이스크림 한 덩이"
+              }
+            ],
+            "message_cardinality": 1,
+            "raw_output": "{\"options\":[{\"headline\":\"망고와 얼음의 시원한 조합\",\"body\":\"시원함을 즐기는 한 그릇\"},{\"headline\":\"더위에 시원한 한 그릇\",\"body\":\"망고와 얼음이 어우러져요\"},{\"headline\":\"시원하게, 활기차게\",\"body\":\"망고와 얼음의 조합으로 즐겨요\"},{\"headline\":\"얼음 위에 망고를 담아\",\"body\":\"시원한 조합으로 즐기는 빙수\"}]}",
+            "usage": {
+              "input_tokens": 677,
+              "cached_input_tokens": 0,
+              "output_tokens": 121,
+              "reasoning_tokens": 0,
+              "total_tokens": 798
+            },
+            "local_qc": [
+              {
+                "index": 1,
+                "headline": "망고와 얼음의 시원한 조합",
+                "body": "시원함을 즐기는 한 그릇",
+                "issues": [
+                  "SAME_CLAIM_REPEATED",
+                  "UNNECESSARY_SUBCOPY"
+                ]
+              },
+              {
+                "index": 2,
+                "headline": "더위에 시원한 한 그릇",
+                "body": "망고와 얼음이 어우러져요",
+                "issues": [
+                  "SAME_CLAIM_REPEATED",
+                  "UNNECESSARY_SUBCOPY"
+                ]
+              },
+              {
+                "index": 3,
+                "headline": "시원하게, 활기차게",
+                "body": "망고와 얼음의 조합으로 즐겨요",
+                "issues": [
+                  "SAME_CLAIM_REPEATED",
+                  "UNNECESSARY_SUBCOPY"
+                ]
+              },
+              {
+                "index": 4,
+                "headline": "얼음 위에 망고를 담아",
+                "body": "시원한 조합으로 즐기는 빙수",
+                "issues": [
+                  "INCOMPLETE_EXPRESSION",
+                  "SAME_CLAIM_REPEATED",
+                  "UNNECESSARY_SUBCOPY"
+                ]
+              }
+            ],
+            "naturalness_judge": [
+              {
+                "index": 1,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 2,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "확인된 특징을 벗어나지 않지만 설명에 그쳐, 요청된 활기찬 광고 느낌이 약합니다."
+              },
+              {
+                "index": 2,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 3,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "더위를 겨냥한 시원한 문구와 자연스러운 맛 설명이지만, 활기찬 인상은 다소 약합니다."
+              },
+              {
+                "index": 3,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 3,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "요청한 톤을 반영했으나, ‘조합으로 즐겨요’가 다소 설명적이고 활기찬 광고 문구로는 힘이 약합니다."
+              },
+              {
+                "index": 4,
+                "meaningful": true,
+                "naturalness": 3,
+                "ad_value": 2,
+                "grounded": false,
+                "menu_name_repeated": false,
+                "descriptive_caption": true,
+                "reason": "‘얼음 위에 망고를 담아’는 확인된 특징에 없는 담는 방식을 단정하며, 전체적으로 사진을 설명하는 문장에 가깝습니다."
+              }
+            ],
+            "judge_usage": {
+              "input_tokens": 506,
+              "cached_input_tokens": 0,
+              "output_tokens": 311,
+              "reasoning_tokens": 0,
+              "total_tokens": 817
+            },
+            "qualified_count": 0,
+            "accepted_total": 0
+          },
+          {
+            "attempt": 2,
+            "raw_image_sent": false,
+            "visual_caption_sent_to_copy_model": false,
+            "filtered_visual_facts_sent": [
+              {
+                "category": "product_type",
+                "value": "빙수"
+              },
+              {
+                "category": "visible_component",
+                "value": "아이스크림 한 덩이"
+              }
+            ],
+            "message_cardinality": 1,
+            "raw_output": "{\"options\":[{\"headline\":\"망고와 얼음, 시원하게 한입\",\"body\":\"차가운 조합으로 더위를 식혀 보세요.\"},{\"headline\":\"시원함이 필요한 순간\",\"body\":\"망고와 얼음의 조합으로 활기차게 즐겨요.\"},{\"headline\":\"더위에 상큼한 리듬을\",\"body\":\"망고와 얼음이 만나 시원함을 전해요.\"},{\"headline\":\"한입에 기분 전환\",\"body\":\"망고와 얼음의 시원한 조합을 즐겨 보세요.\"}]}",
+            "usage": {
+              "input_tokens": 899,
+              "cached_input_tokens": 0,
+              "output_tokens": 134,
+              "reasoning_tokens": 0,
+              "total_tokens": 1033
+            },
+            "local_qc": [
+              {
+                "index": 1,
+                "headline": "망고와 얼음, 시원하게 한입",
+                "body": "차가운 조합으로 더위를 식혀 보세요",
+                "issues": []
+              },
+              {
+                "index": 2,
+                "headline": "시원함이 필요한 순간",
+                "body": "망고와 얼음의 조합으로 활기차게 즐겨요",
+                "issues": [
+                  "SAME_CLAIM_REPEATED",
+                  "UNNECESSARY_SUBCOPY"
+                ]
+              },
+              {
+                "index": 3,
+                "headline": "더위에 상큼한 리듬을",
+                "body": "망고와 얼음이 만나 시원함을 전해요",
+                "issues": [
+                  "INCOMPLETE_EXPRESSION"
+                ]
+              },
+              {
+                "index": 4,
+                "headline": "한입에 기분 전환",
+                "body": "망고와 얼음의 시원한 조합을 즐겨 보세요",
+                "issues": []
+              }
+            ],
+            "naturalness_judge": [
+              {
+                "index": 1,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 3,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "시원한 특징과 요청 톤을 담았지만, 두 문장이 특징을 직접 설명하는 데 그쳐 광고적인 활기는 다소 약합니다."
+              },
+              {
+                "index": 2,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "시원함이 필요한 순간을 제안하고 ‘활기차게’라는 요청도 반영해 자연스럽습니다. 확인된 망고와 얼음의 조합에서 벗어나지 않습니다."
+              },
+              {
+                "index": 3,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "‘상큼한 리듬’으로 활기찬 톤을 살리고, 망고와 얼음의 시원함을 자연스럽게 연결했습니다."
+              },
+              {
+                "index": 4,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 3,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "기분 전환이라는 광고적 제안은 자연스럽지만, 나머지는 확인된 특징을 설명하는 수준이라 활기찬 인상은 비교적 약합니다."
+              }
+            ],
+            "judge_usage": {
+              "input_tokens": 515,
+              "cached_input_tokens": 0,
+              "output_tokens": 323,
+              "reasoning_tokens": 0,
+              "total_tokens": 838
+            },
+            "qualified_count": 2,
+            "accepted_total": 2
+          }
+        ]
+      },
+      "final_validation_issues": [],
+      "checks": {
+        "fact_preservation_pass": true,
+        "duplicate_pass": true,
+        "length_pass": true,
+        "naturalness_rule_pass": true,
+        "final_validator_pass": true,
+        "overall_pass": true
+      },
+      "elapsed_seconds": 19.65,
+      "error": null
+    },
+    {
+      "case_id": "test_dessert_mont_blanc",
+      "category": "dessert",
+      "image_path": "samples/dataset/test/desserts/mont_blanc.png",
+      "fixed_input": {
+        "store_name": "느린 밤 디저트",
+        "product_name": "몽블랑",
+        "price": "8,000원",
+        "features": "밤 크림의 부드러운 풍미",
+        "promotion": null,
+        "tone": "차분하고 고급스럽게",
+        "copy_request": "늦은 저녁에 천천히 즐기는 디저트 분위기로, 밤 크림의 풍미를 중심에 두어 주세요.",
+        "generation_mode": "headline_and_subcopy",
+        "promotion_copy_mode": "badge_only"
+      },
+      "visual_extraction": {
+        "model_id": "gemini-3.5-flash-lite",
+        "prompt_version": "gemini_visual_facts_v1.1.0-korean-retry",
+        "status": "extracted",
+        "verified_facts": [
+          {
+            "id": "v1",
+            "category": "product_type",
+            "value": "케이크",
+            "confidence": "high"
+          },
+          {
+            "id": "v2",
+            "category": "shape",
+            "value": "원뿔형",
+            "confidence": "high"
+          },
+          {
+            "id": "v3",
+            "category": "color",
+            "value": "갈색",
+            "confidence": "high"
+          },
+          {
+            "id": "v4",
+            "category": "container",
+            "value": "접시",
+            "confidence": "high"
+          },
+          {
+            "id": "v5",
+            "category": "visible_component",
+            "value": "밤",
+            "confidence": "high"
+          },
+          {
+            "id": "v6",
+            "category": "arrangement",
+            "value": "정중앙",
+            "confidence": "high"
+          },
+          {
+            "id": "v7",
+            "category": "count",
+            "value": "한 개",
+            "confidence": "high"
+          }
+        ],
+        "rejected_observations": [],
+        "excluded_inferences": [
+          "달콤한 맛",
+          "부드러운 식감",
+          "고소한 풍미",
+          "신선한 재료",
+          "수제 방식"
+        ],
+        "notice": null,
+        "raw_output": "{\n  \"observations\": [\n    {\n      \"category\": \"product_type\",\n      \"value\": \"케이크\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"shape\",\n      \"value\": \"원뿔형\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"color\",\n      \"value\": \"갈색\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"container\",\n      \"value\": \"접시\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"밤\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"arrangement\",\n      \"value\": \"정중앙\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"count\",\n      \"value\": \"한 개\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"excluded_inferences\": [\n    \"달콤한 맛\",\n    \"부드러운 식감\",\n    \"고소한 풍미\",\n    \"신선한 재료\",\n    \"수제 방식\"\n  ]\n}"
+      },
+      "copy_generation": {
+        "model_id": "gpt-6-luna",
+        "prompt_version": "openai_copy_v1.10.18-request-aware-partial-recovery",
+        "status": "generated",
+        "generation_mode": "headline_and_subcopy",
+        "attempts": 1,
+        "notice": "상품 사실과 요청 맥락을 함께 반영하고 의미 기반 사실성·자연스러움 검증을 통과한 후보만 선택했습니다.",
+        "copies": [
+          {
+            "headline": "늦은 저녁의 여유",
+            "body": "부드러운 밤 크림 풍미를 천천히 즐겨보세요",
+            "hashtags": [
+              "#몽블랑",
+              "#느린밤디저트"
+            ]
+          },
+          {
+            "headline": "고요하게 음미하는 밤",
+            "body": "밤 크림의 부드러운 풍미가 차분한 시간을 채웁니다",
+            "hashtags": [
+              "#몽블랑",
+              "#느린밤디저트"
+            ]
+          }
+        ],
+        "first_attempt_validation_issues": [],
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "raw_image_sent": false,
+            "visual_caption_sent_to_copy_model": false,
+            "filtered_visual_facts_sent": [
+              {
+                "category": "product_type",
+                "value": "케이크"
+              }
+            ],
+            "message_cardinality": 1,
+            "raw_output": "{\"options\":[{\"headline\":\"밤 크림의 부드러운 풍미\",\"body\":\"늦은 저녁, 천천히 음미해 보세요.\"},{\"headline\":\"늦은 저녁의 여유\",\"body\":\"부드러운 밤 크림 풍미를 천천히 즐겨보세요.\"},{\"headline\":\"고요하게 음미하는 밤\",\"body\":\"밤 크림의 부드러운 풍미가 차분한 시간을 채웁니다.\"},{\"headline\":\"천천히 즐기는 디저트\",\"body\":\"밤 크림의 부드러운 풍미와 함께 늦은 저녁을 보내세요.\"}]}",
+            "usage": {
+              "input_tokens": 703,
+              "cached_input_tokens": 0,
+              "output_tokens": 141,
+              "reasoning_tokens": 0,
+              "total_tokens": 844
+            },
+            "local_qc": [
+              {
+                "index": 1,
+                "headline": "밤 크림의 부드러운 풍미",
+                "body": "늦은 저녁, 천천히 음미해 보세요",
+                "issues": []
+              },
+              {
+                "index": 2,
+                "headline": "늦은 저녁의 여유",
+                "body": "부드러운 밤 크림 풍미를 천천히 즐겨보세요",
+                "issues": []
+              },
+              {
+                "index": 3,
+                "headline": "고요하게 음미하는 밤",
+                "body": "밤 크림의 부드러운 풍미가 차분한 시간을 채웁니다",
+                "issues": []
+              },
+              {
+                "index": 4,
+                "headline": "천천히 즐기는 디저트",
+                "body": "밤 크림의 부드러운 풍미와 함께 늦은 저녁을 보내세요",
+                "issues": []
+              }
+            ],
+            "naturalness_judge": [
+              {
+                "index": 1,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 2,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "확인된 풍미와 늦은 저녁 분위기를 담았지만, 특징을 그대로 설명하는 데 그쳐 광고 문구로서의 매력은 약합니다."
+              },
+              {
+                "index": 2,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "늦은 저녁의 여유와 밤 크림 풍미를 중심으로 천천히 즐기는 장면을 자연스럽고 차분하게 제안합니다."
+              },
+              {
+                "index": 3,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "고요한 분위기와 천천히 음미하는 감성을 담아 요청한 톤에 부합합니다. 다만 ‘시간을 채웁니다’는 다소 상투적입니다."
+              },
+              {
+                "index": 4,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "늦은 저녁에 천천히 즐기는 디저트 장면과 확인된 풍미를 자연스럽게 연결해 요청을 잘 반영합니다."
+              }
+            ],
+            "judge_usage": {
+              "input_tokens": 547,
+              "cached_input_tokens": 0,
+              "output_tokens": 324,
+              "reasoning_tokens": 0,
+              "total_tokens": 871
+            },
+            "qualified_count": 3,
+            "accepted_total": 3
+          }
+        ]
+      },
+      "final_validation_issues": [],
+      "checks": {
+        "fact_preservation_pass": true,
+        "duplicate_pass": true,
+        "length_pass": true,
+        "naturalness_rule_pass": true,
+        "final_validator_pass": true,
+        "overall_pass": true
+      },
+      "elapsed_seconds": 11.53,
+      "error": null
+    },
+    {
+      "case_id": "test_dessert_pavlova",
+      "category": "dessert",
+      "image_path": "samples/dataset/test/desserts/pavlova.png",
+      "fixed_input": {
+        "store_name": "느린 밤 디저트",
+        "product_name": "파블로바",
+        "price": "8,500원",
+        "features": "머랭과 크림, 과일의 조합",
+        "promotion": null,
+        "tone": "가볍고 우아하게",
+        "copy_request": "오후 티타임에 어울리도록 산뜻한 리듬으로 쓰고, 확인되지 않은 맛 표현은 추가하지 마세요.",
+        "generation_mode": "headline_and_subcopy",
+        "promotion_copy_mode": "badge_only"
+      },
+      "visual_extraction": {
+        "model_id": "gemini-3.5-flash-lite",
+        "prompt_version": "gemini_visual_facts_v1.1.0-korean-retry",
+        "status": "extracted",
+        "verified_facts": [
+          {
+            "id": "v1",
+            "category": "product_type",
+            "value": "디저트",
+            "confidence": "high"
+          },
+          {
+            "id": "v2",
+            "category": "color",
+            "value": "하얀색",
+            "confidence": "high"
+          },
+          {
+            "id": "v3",
+            "category": "shape",
+            "value": "원형",
+            "confidence": "high"
+          },
+          {
+            "id": "v4",
+            "category": "container",
+            "value": "접시",
+            "confidence": "high"
+          },
+          {
+            "id": "v5",
+            "category": "visible_component",
+            "value": "딸기",
+            "confidence": "high"
+          },
+          {
+            "id": "v6",
+            "category": "visible_component",
+            "value": "블루베리",
+            "confidence": "high"
+          },
+          {
+            "id": "v7",
+            "category": "visible_component",
+            "value": "라즈베리",
+            "confidence": "high"
+          },
+          {
+            "id": "v8",
+            "category": "visible_component",
+            "value": "민트잎",
+            "confidence": "high"
+          },
+          {
+            "id": "v9",
+            "category": "arrangement",
+            "value": "과일이 위에 올려져 있음",
+            "confidence": "high"
+          }
+        ],
+        "rejected_observations": [],
+        "excluded_inferences": [
+          "상큼한 맛",
+          "달콤한 맛",
+          "바삭한 식감",
+          "신선한 과일"
+        ],
+        "notice": null,
+        "raw_output": "{\n  \"observations\": [\n    {\n      \"category\": \"product_type\",\n      \"value\": \"디저트\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"color\",\n      \"value\": \"하얀색\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"shape\",\n      \"value\": \"원형\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"container\",\n      \"value\": \"접시\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"딸기\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"블루베리\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"라즈베리\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"민트잎\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"arrangement\",\n      \"value\": \"과일이 위에 올려져 있음\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"excluded_inferences\": [\n    \"상큼한 맛\",\n    \"달콤한 맛\",\n    \"바삭한 식감\",\n    \"신선한 과일\"\n  ]\n}"
+      },
+      "copy_generation": {
+        "model_id": "gpt-6-luna",
+        "prompt_version": "openai_copy_v1.10.18-request-aware-partial-recovery",
+        "status": "generated",
+        "generation_mode": "headline_and_subcopy",
+        "attempts": 1,
+        "notice": "상품 사실과 요청 맥락을 함께 반영하고 의미 기반 사실성·자연스러움 검증을 통과한 후보만 선택했습니다.",
+        "copies": [
+          {
+            "headline": "산뜻한 리듬으로 즐기는 티타임",
+            "body": "과일과 머랭, 크림의 조합을 담았어요",
+            "hashtags": [
+              "#파블로바",
+              "#느린밤디저트"
+            ]
+          },
+          {
+            "headline": "티타임에 더하는 우아한 한 접시",
+            "body": "머랭과 크림에 과일을 조화롭게 곁들였어요",
+            "hashtags": [
+              "#파블로바",
+              "#느린밤디저트"
+            ]
+          }
+        ],
+        "first_attempt_validation_issues": [],
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "raw_image_sent": false,
+            "visual_caption_sent_to_copy_model": false,
+            "filtered_visual_facts_sent": [
+              {
+                "category": "visible_component",
+                "value": "딸기"
+              },
+              {
+                "category": "visible_component",
+                "value": "블루베리"
+              }
+            ],
+            "message_cardinality": 2,
+            "raw_output": "{\"options\":[{\"headline\":\"머랭과 크림의 조화\",\"body\":\"과일을 곁들여 완성한 오후의 티타임.\"},{\"headline\":\"오후 티타임, 한 템포 가볍게\",\"body\":\"머랭과 크림, 과일이 어우러진 한 접시.\"},{\"headline\":\"산뜻한 리듬으로 즐기는 티타임\",\"body\":\"과일과 머랭, 크림의 조합을 담았어요.\"},{\"headline\":\"티타임에 더하는 우아한 한 접시\",\"body\":\"머랭과 크림에 과일을 조화롭게 곁들였어요.\"}]}",
+            "usage": {
+              "input_tokens": 709,
+              "cached_input_tokens": 0,
+              "output_tokens": 155,
+              "reasoning_tokens": 0,
+              "total_tokens": 864
+            },
+            "local_qc": [
+              {
+                "index": 1,
+                "headline": "머랭과 크림의 조화",
+                "body": "과일을 곁들여 완성한 오후의 티타임",
+                "issues": []
+              },
+              {
+                "index": 2,
+                "headline": "오후 티타임, 한 템포 가볍게",
+                "body": "머랭과 크림, 과일이 어우러진 한 접시",
+                "issues": [
+                  "UNSUPPORTED_SENSORY_CLAIM"
+                ]
+              },
+              {
+                "index": 3,
+                "headline": "산뜻한 리듬으로 즐기는 티타임",
+                "body": "과일과 머랭, 크림의 조합을 담았어요",
+                "issues": []
+              },
+              {
+                "index": 4,
+                "headline": "티타임에 더하는 우아한 한 접시",
+                "body": "머랭과 크림에 과일을 조화롭게 곁들였어요",
+                "issues": []
+              }
+            ],
+            "naturalness_judge": [
+              {
+                "index": 1,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 2,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "확인된 재료 조합과 오후 티타임을 담았지만 특징을 옮긴 설명에 가까워 광고적 매력과 가벼운 리듬이 약합니다."
+              },
+              {
+                "index": 2,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 5,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "오후 티타임에 가볍게 즐기는 분위기를 짧은 리듬으로 표현하고, 확인된 재료 조합만 제시했습니다."
+              },
+              {
+                "index": 3,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "요청한 산뜻한 티타임 분위기를 반영했습니다. 다만 부제는 재료 조합을 설명하는 데 그쳐 광고적 인상이 다소 약합니다."
+              },
+              {
+                "index": 4,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "우아한 티타임 분위기와 확인된 재료를 자연스럽게 담았지만, 산뜻한 리듬은 상대적으로 덜 드러납니다."
+              }
+            ],
+            "judge_usage": {
+              "input_tokens": 565,
+              "cached_input_tokens": 0,
+              "output_tokens": 327,
+              "reasoning_tokens": 0,
+              "total_tokens": 892
+            },
+            "qualified_count": 2,
+            "accepted_total": 2
+          }
+        ]
+      },
+      "final_validation_issues": [],
+      "checks": {
+        "fact_preservation_pass": true,
+        "duplicate_pass": true,
+        "length_pass": true,
+        "naturalness_rule_pass": true,
+        "final_validator_pass": true,
+        "overall_pass": true
+      },
+      "elapsed_seconds": 12.04,
+      "error": null
+    },
+    {
+      "case_id": "test_drink_black_sesame",
+      "category": "drink",
+      "image_path": "samples/dataset/test/drinks/black_sesame_latte.png",
+      "fixed_input": {
+        "store_name": "한 잔의 여백",
+        "product_name": "흑임자 라떼",
+        "price": "6,000원",
+        "features": "고소한 흑임자 풍미",
+        "promotion": null,
+        "tone": "차분하고 세련되게",
+        "copy_request": "잠시 쉬어 가는 시간의 분위기와 흑임자의 고소함이 함께 드러나게 작성해 주세요.",
+        "generation_mode": "headline_and_subcopy",
+        "promotion_copy_mode": "badge_only"
+      },
+      "visual_extraction": {
+        "model_id": "gemini-3.5-flash-lite",
+        "prompt_version": "gemini_visual_facts_v1.1.0-korean-retry",
+        "status": "extracted",
+        "verified_facts": [
+          {
+            "id": "v1",
+            "category": "product_type",
+            "value": "음료",
+            "confidence": "high"
+          },
+          {
+            "id": "v2",
+            "category": "container",
+            "value": "손잡이가 있는 컵과 받침",
+            "confidence": "high"
+          },
+          {
+            "id": "v3",
+            "category": "color",
+            "value": "컵은 흰색 계통",
+            "confidence": "high"
+          },
+          {
+            "id": "v4",
+            "category": "color",
+            "value": "음료 표면은 흰색과 검은색 무늬",
+            "confidence": "high"
+          },
+          {
+            "id": "v5",
+            "category": "shape",
+            "value": "음료 표면에 소용돌이 형태 무늬",
+            "confidence": "high"
+          },
+          {
+            "id": "v6",
+            "category": "arrangement",
+            "value": "컵이 받침 위에 놓여 있음",
+            "confidence": "high"
+          },
+          {
+            "id": "v7",
+            "category": "count",
+            "value": "컵 한 개",
+            "confidence": "high"
+          }
+        ],
+        "rejected_observations": [],
+        "excluded_inferences": [
+          "흑임자 맛",
+          "고소한 풍미",
+          "따뜻한 온도",
+          "부드러운 식감",
+          "신선한 재료"
+        ],
+        "notice": null,
+        "raw_output": "{\n  \"observations\": [\n    {\n      \"category\": \"product_type\",\n      \"value\": \"음료\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"container\",\n      \"value\": \"손잡이가 있는 컵과 받침\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"color\",\n      \"value\": \"컵은 흰색 계통\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"color\",\n      \"value\": \"음료 표면은 흰색과 검은색 무늬\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"shape\",\n      \"value\": \"음료 표면에 소용돌이 형태 무늬\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"arrangement\",\n      \"value\": \"컵이 받침 위에 놓여 있음\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"count\",\n      \"value\": \"컵 한 개\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"excluded_inferences\": [\n    \"흑임자 맛\",\n    \"고소한 풍미\",\n    \"따뜻한 온도\",\n    \"부드러운 식감\",\n    \"신선한 재료\"\n  ]\n}"
+      },
+      "copy_generation": {
+        "model_id": "gpt-6-luna",
+        "prompt_version": "openai_copy_v1.10.18-request-aware-partial-recovery",
+        "status": "generated",
+        "generation_mode": "headline_and_subcopy",
+        "attempts": 1,
+        "notice": "상품 사실과 요청 맥락을 함께 반영하고 의미 기반 사실성·자연스러움 검증을 통과한 후보만 선택했습니다.",
+        "copies": [
+          {
+            "headline": "잠시, 나를 위한 여유",
+            "body": "고소한 흑임자 풍미가 쉬어 가는 시간을 채웁니다",
+            "hashtags": [
+              "#흑임자라떼",
+              "#한잔의여백"
+            ]
+          },
+          {
+            "headline": "차분하게 머무는 한 잔",
+            "body": "흑임자의 고소함과 함께 여유를 누려 보세요",
+            "hashtags": [
+              "#흑임자라떼",
+              "#한잔의여백"
+            ]
+          }
+        ],
+        "first_attempt_validation_issues": [],
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "raw_image_sent": false,
+            "visual_caption_sent_to_copy_model": false,
+            "filtered_visual_facts_sent": [],
+            "message_cardinality": 1,
+            "raw_output": "{\"options\":[{\"headline\":\"고소함을 곁에 두는 휴식\",\"body\":\"흑임자의 풍미와 함께 잠시 쉬어 가세요.\"},{\"headline\":\"잠시, 나를 위한 여유\",\"body\":\"고소한 흑임자 풍미가 쉬어 가는 시간을 채웁니다.\"},{\"headline\":\"차분하게 머무는 한 잔\",\"body\":\"흑임자의 고소함과 함께 여유를 누려 보세요.\"},{\"headline\":\"쉬어 가는 순간의 고소함\",\"body\":\"은은하게 고소한 흑임자 풍미를 즐겨 보세요.\"}]}",
+            "usage": {
+              "input_tokens": 705,
+              "cached_input_tokens": 0,
+              "output_tokens": 145,
+              "reasoning_tokens": 0,
+              "total_tokens": 850
+            },
+            "local_qc": [
+              {
+                "index": 1,
+                "headline": "고소함을 곁에 두는 휴식",
+                "body": "흑임자의 풍미와 함께 잠시 쉬어 가세요",
+                "issues": [
+                  "SAME_CLAIM_REPEATED",
+                  "UNNECESSARY_SUBCOPY"
+                ]
+              },
+              {
+                "index": 2,
+                "headline": "잠시, 나를 위한 여유",
+                "body": "고소한 흑임자 풍미가 쉬어 가는 시간을 채웁니다",
+                "issues": []
+              },
+              {
+                "index": 3,
+                "headline": "차분하게 머무는 한 잔",
+                "body": "흑임자의 고소함과 함께 여유를 누려 보세요",
+                "issues": []
+              },
+              {
+                "index": 4,
+                "headline": "쉬어 가는 순간의 고소함",
+                "body": "은은하게 고소한 흑임자 풍미를 즐겨 보세요",
+                "issues": [
+                  "SAME_CLAIM_REPEATED",
+                  "UNNECESSARY_SUBCOPY"
+                ]
+              }
+            ],
+            "naturalness_judge": [
+              {
+                "index": 1,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "휴식과 흑임자의 고소함을 짧고 자연스럽게 연결해 요청한 분위기를 잘 담았습니다. 차분하고 세련된 톤에도 어울립니다."
+              },
+              {
+                "index": 2,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "‘나를 위한 여유’가 잠시 쉬어 가는 상황을 살리고, 흑임자 풍미도 드러납니다. 다만 ‘시간을 채웁니다’는 다소 익숙한 표현입니다."
+              },
+              {
+                "index": 3,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "차분한 한 잔의 분위기와 흑임자의 고소함을 자연스럽게 함께 전달합니다. 요청한 톤과 메시지에 잘 맞습니다."
+              },
+              {
+                "index": 4,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "쉬어 가는 순간과 흑임자의 고소함을 간결하게 결합했습니다. ‘은은하게’가 확인된 풍미를 과장하지 않으면서 차분한 톤을 살립니다."
+              }
+            ],
+            "judge_usage": {
+              "input_tokens": 553,
+              "cached_input_tokens": 0,
+              "output_tokens": 349,
+              "reasoning_tokens": 0,
+              "total_tokens": 902
+            },
+            "qualified_count": 2,
+            "accepted_total": 2
+          }
+        ]
+      },
+      "final_validation_issues": [],
+      "checks": {
+        "fact_preservation_pass": true,
+        "duplicate_pass": true,
+        "length_pass": true,
+        "naturalness_rule_pass": true,
+        "final_validator_pass": true,
+        "overall_pass": true
+      },
+      "elapsed_seconds": 13.26,
+      "error": null
+    },
+    {
+      "case_id": "test_drink_cappuccino",
+      "category": "drink",
+      "image_path": "samples/dataset/test/drinks/cappuccino_windowlight.png",
+      "fixed_input": {
+        "store_name": "한 잔의 여백",
+        "product_name": "카푸치노",
+        "price": "5,500원",
+        "features": "에스프레소와 우유 거품의 조합",
+        "promotion": "오전 11시 이전 500원 할인",
+        "tone": "활기차고 친근하게",
+        "copy_request": "제목에는 오전 할인 정보를, 보조 문구에는 에스프레소와 우유 거품의 조합을 넣어 주세요.",
+        "generation_mode": "headline_and_subcopy",
+        "promotion_copy_mode": "badge_only"
+      },
+      "visual_extraction": {
+        "model_id": "gemini-3.5-flash-lite",
+        "prompt_version": "gemini_visual_facts_v1.1.0-korean-retry",
+        "status": "extracted",
+        "verified_facts": [
+          {
+            "id": "v1",
+            "category": "product_type",
+            "value": "커피",
+            "confidence": "high"
+          },
+          {
+            "id": "v2",
+            "category": "color",
+            "value": "갈색과 흰색",
+            "confidence": "high"
+          },
+          {
+            "id": "v3",
+            "category": "shape",
+            "value": "원형",
+            "confidence": "high"
+          },
+          {
+            "id": "v4",
+            "category": "count",
+            "value": "한 잔",
+            "confidence": "high"
+          },
+          {
+            "id": "v5",
+            "category": "container",
+            "value": "손잡이가 달린 컵과 받침",
+            "confidence": "high"
+          },
+          {
+            "id": "v6",
+            "category": "visible_component",
+            "value": "나뭇잎 모양의 거품 장식",
+            "confidence": "high"
+          },
+          {
+            "id": "v7",
+            "category": "arrangement",
+            "value": "컵이 받침 위에 놓여 있음",
+            "confidence": "high"
+          }
+        ],
+        "rejected_observations": [],
+        "excluded_inferences": [
+          "부드러운 맛",
+          "따뜻한 온도",
+          "고소한 향"
+        ],
+        "notice": null,
+        "raw_output": "{\n  \"observations\": [\n    {\n      \"category\": \"product_type\",\n      \"value\": \"커피\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"color\",\n      \"value\": \"갈색과 흰색\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"shape\",\n      \"value\": \"원형\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"count\",\n      \"value\": \"한 잔\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"container\",\n      \"value\": \"손잡이가 달린 컵과 받침\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"나뭇잎 모양의 거품 장식\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"arrangement\",\n      \"value\": \"컵이 받침 위에 놓여 있음\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"excluded_inferences\": [\n    \"부드러운 맛\",\n    \"따뜻한 온도\",\n    \"고소한 향\"\n  ]\n}"
+      },
+      "copy_generation": {
+        "model_id": "gpt-6-luna",
+        "prompt_version": "openai_copy_v1.10.18-request-aware-partial-recovery",
+        "status": "generated",
+        "generation_mode": "headline_and_subcopy",
+        "attempts": 1,
+        "notice": "상품 사실과 요청 맥락을 함께 반영하고 의미 기반 사실성·자연스러움 검증을 통과한 후보만 선택했습니다.",
+        "copies": [
+          {
+            "headline": "두 가지 조합, 한 잔의 여유",
+            "body": "에스프레소와 우유 거품이 함께해요",
+            "hashtags": [
+              "#카푸치노",
+              "#한잔의여백"
+            ]
+          },
+          {
+            "headline": "잠깐, 한 잔 쉬어 가요",
+            "body": "에스프레소에 우유 거품을 더한 조합이에요",
+            "hashtags": [
+              "#카푸치노",
+              "#한잔의여백"
+            ]
+          }
+        ],
+        "first_attempt_validation_issues": [],
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "raw_image_sent": false,
+            "visual_caption_sent_to_copy_model": false,
+            "filtered_visual_facts_sent": [
+              {
+                "category": "visible_component",
+                "value": "나뭇잎 모양의 거품 장식"
+              }
+            ],
+            "message_cardinality": 1,
+            "raw_output": "{\"options\":[{\"headline\":\"두 가지 조합, 한 잔의 여유\",\"body\":\"에스프레소와 우유 거품이 함께해요.\"},{\"headline\":\"잠깐, 한 잔 쉬어 가요!\",\"body\":\"에스프레소에 우유 거품을 더한 조합이에요.\"},{\"headline\":\"오늘도 힘차게 한 잔!\",\"body\":\"에스프레소와 우유 거품이 어우러져요.\"},{\"headline\":\"에스프레소에 거품 한 겹\",\"body\":\"우유 거품과 함께하는 조합이에요.\"}]}",
+            "usage": {
+              "input_tokens": 701,
+              "cached_input_tokens": 0,
+              "output_tokens": 143,
+              "reasoning_tokens": 0,
+              "total_tokens": 844
+            },
+            "local_qc": [
+              {
+                "index": 1,
+                "headline": "두 가지 조합, 한 잔의 여유",
+                "body": "에스프레소와 우유 거품이 함께해요",
+                "issues": []
+              },
+              {
+                "index": 2,
+                "headline": "잠깐, 한 잔 쉬어 가요",
+                "body": "에스프레소에 우유 거품을 더한 조합이에요",
+                "issues": []
+              },
+              {
+                "index": 3,
+                "headline": "오늘도 힘차게 한 잔",
+                "body": "에스프레소와 우유 거품이 어우러져요",
+                "issues": []
+              },
+              {
+                "index": 4,
+                "headline": "에스프레소에 거품 한 겹",
+                "body": "우유 거품과 함께하는 조합이에요",
+                "issues": [
+                  "SAME_CLAIM_REPEATED",
+                  "UNNECESSARY_SUBCOPY"
+                ]
+              }
+            ],
+            "naturalness_judge": [
+              {
+                "index": 1,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 3,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "활기찬 느낌은 약하지만 친근하고 간결합니다. 보조 문구에 확인된 조합이 담겼습니다."
+              },
+              {
+                "index": 2,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 3,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "친근한 말투로 쉬어 가는 상황을 제안하며, 보조 문구가 확인된 조합을 설명합니다. 활기찬 톤은 다소 약합니다."
+              },
+              {
+                "index": 3,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "활기찬 헤드라인과 친근한 어투가 요청 톤에 잘 맞고, 보조 문구에 확인된 조합이 들어 있습니다."
+              },
+              {
+                "index": 4,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 2,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "확인된 재료 조합을 벗어나지 않지만, 특징을 설명하는 데 그쳐 광고성이 약합니다. 요청한 활기찬·친근한 톤도 충분히 드러나지 않습니다."
+              }
+            ],
+            "judge_usage": {
+              "input_tokens": 545,
+              "cached_input_tokens": 0,
+              "output_tokens": 324,
+              "reasoning_tokens": 0,
+              "total_tokens": 869
+            },
+            "qualified_count": 3,
+            "accepted_total": 3
+          }
+        ]
+      },
+      "final_validation_issues": [],
+      "checks": {
+        "fact_preservation_pass": true,
+        "duplicate_pass": true,
+        "length_pass": true,
+        "naturalness_rule_pass": true,
+        "final_validator_pass": true,
+        "overall_pass": true
+      },
+      "elapsed_seconds": 13.88,
+      "error": null
+    },
+    {
+      "case_id": "test_drink_earl_grey",
+      "category": "drink",
+      "image_path": "samples/dataset/test/drinks/earl_grey_milk_tea.png",
+      "fixed_input": {
+        "store_name": "찻잔 옆 창가",
+        "product_name": "얼그레이 밀크티",
+        "price": "6,500원",
+        "features": "얼그레이 향과 부드러운 밀크티",
+        "promotion": null,
+        "tone": "클래식하고 따뜻하게",
+        "copy_request": "비 오는 날 창가에서 마시는 장면을 떠올릴 수 있게 쓰되 상품의 온도는 단정하지 마세요.",
+        "generation_mode": "headline_and_subcopy",
+        "promotion_copy_mode": "badge_only"
+      },
+      "visual_extraction": {
+        "model_id": "gemini-3.5-flash-lite",
+        "prompt_version": "gemini_visual_facts_v1.1.0-korean-retry",
+        "status": "extracted",
+        "verified_facts": [
+          {
+            "id": "v1",
+            "category": "product_type",
+            "value": "음료",
+            "confidence": "high"
+          },
+          {
+            "id": "v2",
+            "category": "color",
+            "value": "연한 갈색",
+            "confidence": "high"
+          },
+          {
+            "id": "v3",
+            "category": "container",
+            "value": "유리잔",
+            "confidence": "high"
+          },
+          {
+            "id": "v4",
+            "category": "shape",
+            "value": "둥근 형태",
+            "confidence": "high"
+          },
+          {
+            "id": "v5",
+            "category": "visible_component",
+            "value": "얼음",
+            "confidence": "high"
+          },
+          {
+            "id": "v6",
+            "category": "visible_component",
+            "value": "말린 과일 조각",
+            "confidence": "high"
+          },
+          {
+            "id": "v7",
+            "category": "arrangement",
+            "value": "말린 과일 조각이 음료 위에 올려져 있음",
+            "confidence": "high"
+          }
+        ],
+        "rejected_observations": [],
+        "excluded_inferences": [
+          "시원한 맛",
+          "달콤한 향",
+          "부드러운 식감",
+          "신선한 재료"
+        ],
+        "notice": null,
+        "raw_output": "{\n  \"observations\": [\n    {\n      \"category\": \"product_type\",\n      \"value\": \"음료\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"color\",\n      \"value\": \"연한 갈색\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"container\",\n      \"value\": \"유리잔\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"shape\",\n      \"value\": \"둥근 형태\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"얼음\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"말린 과일 조각\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"arrangement\",\n      \"value\": \"말린 과일 조각이 음료 위에 올려져 있음\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"excluded_inferences\": [\n    \"시원한 맛\",\n    \"달콤한 향\",\n    \"부드러운 식감\",\n    \"신선한 재료\"\n  ]\n}"
+      },
+      "copy_generation": {
+        "model_id": "gpt-6-luna",
+        "prompt_version": "openai_copy_v1.10.18-request-aware-partial-recovery",
+        "status": "generated",
+        "generation_mode": "headline_and_subcopy",
+        "attempts": 1,
+        "notice": "상품 사실과 요청 맥락을 함께 반영하고 의미 기반 사실성·자연스러움 검증을 통과한 후보만 선택했습니다.",
+        "copies": [
+          {
+            "headline": "얼그레이 향이 번지는 한 잔",
+            "body": "부드러운 밀크티와 함께 비 오는 창가를 떠올려 보세요",
+            "hashtags": [
+              "#얼그레이밀크티",
+              "#찻잔옆창가"
+            ]
+          },
+          {
+            "headline": "창가에 비가 내리는 날",
+            "body": "얼그레이 향과 부드러운 밀크티가 잔잔한 여운을 전합니다",
+            "hashtags": [
+              "#얼그레이밀크티",
+              "#찻잔옆창가"
+            ]
+          }
+        ],
+        "first_attempt_validation_issues": [],
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "raw_image_sent": false,
+            "visual_caption_sent_to_copy_model": false,
+            "filtered_visual_facts_sent": [
+              {
+                "category": "visible_component",
+                "value": "말린 과일 조각"
+              }
+            ],
+            "message_cardinality": 2,
+            "raw_output": "{\"options\":[{\"headline\":\"얼그레이 향이 번지는 한 잔\",\"body\":\"부드러운 밀크티와 함께 비 오는 창가를 떠올려 보세요.\"},{\"headline\":\"창가에 비가 내리는 날\",\"body\":\"얼그레이 향과 부드러운 밀크티가 잔잔한 여운을 전합니다.\"},{\"headline\":\"비 오는 날, 고요한 한 잔\",\"body\":\"얼그레이의 향을 부드러운 밀크티로 즐겨보세요.\"},{\"headline\":\"빗소리 곁에 머무는 여유\",\"body\":\"부드러운 밀크티에 깃든 얼그레이 향을 음미해 보세요.\"}]}",
+            "usage": {
+              "input_tokens": 709,
+              "cached_input_tokens": 0,
+              "output_tokens": 158,
+              "reasoning_tokens": 0,
+              "total_tokens": 867
+            },
+            "local_qc": [
+              {
+                "index": 1,
+                "headline": "얼그레이 향이 번지는 한 잔",
+                "body": "부드러운 밀크티와 함께 비 오는 창가를 떠올려 보세요",
+                "issues": []
+              },
+              {
+                "index": 2,
+                "headline": "창가에 비가 내리는 날",
+                "body": "얼그레이 향과 부드러운 밀크티가 잔잔한 여운을 전합니다",
+                "issues": []
+              },
+              {
+                "index": 3,
+                "headline": "비 오는 날, 고요한 한 잔",
+                "body": "얼그레이의 향을 부드러운 밀크티로 즐겨보세요",
+                "issues": []
+              },
+              {
+                "index": 4,
+                "headline": "빗소리 곁에 머무는 여유",
+                "body": "부드러운 밀크티에 깃든 얼그레이 향을 음미해 보세요",
+                "issues": []
+              }
+            ],
+            "naturalness_judge": [
+              {
+                "index": 1,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "얼그레이 향과 부드러운 밀크티를 바탕으로 비 오는 창가의 장면을 자연스럽게 떠올리게 하며, 클래식하고 따뜻한 분위기도 담았습니다."
+              },
+              {
+                "index": 2,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "비 오는 창가의 분위기와 제품의 확인된 특징을 잔잔하게 연결했습니다. 상품의 온도를 단정하지 않습니다."
+              },
+              {
+                "index": 3,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 3,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "비 오는 날의 고요한 분위기를 담고 확인된 향과 맛의 특징을 제시했습니다. 다만 창가 장면이 직접 드러나지는 않아 요청 반영이 다소 약합니다."
+              },
+              {
+                "index": 4,
+                "meaningful": true,
+                "naturalness": 4,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "빗소리와 여유로운 분위기로 비 오는 날의 장면을 환기하고, 얼그레이 향과 부드러운 밀크티를 자연스럽게 표현했습니다."
+              }
+            ],
+            "judge_usage": {
+              "input_tokens": 568,
+              "cached_input_tokens": 0,
+              "output_tokens": 333,
+              "reasoning_tokens": 0,
+              "total_tokens": 901
+            },
+            "qualified_count": 4,
+            "accepted_total": 4
+          }
+        ]
+      },
+      "final_validation_issues": [],
+      "checks": {
+        "fact_preservation_pass": true,
+        "duplicate_pass": true,
+        "length_pass": true,
+        "naturalness_rule_pass": true,
+        "final_validator_pass": true,
+        "overall_pass": true
+      },
+      "elapsed_seconds": 12.09,
+      "error": null
+    },
+    {
+      "case_id": "test_drink_watermelon",
+      "category": "drink",
+      "image_path": "samples/dataset/test/drinks/watermelon_juice.png",
+      "fixed_input": {
+        "store_name": "여름 한 모금",
+        "product_name": "수박 주스",
+        "price": "5,800원",
+        "features": "수박의 산뜻하고 시원한 풍미",
+        "promotion": null,
+        "tone": "발랄하고 간결하게",
+        "copy_request": "무더운 오후의 기분 전환을 강조하고 제목과 보조 문구의 표현이 겹치지 않게 해 주세요.",
+        "generation_mode": "headline_and_subcopy",
+        "promotion_copy_mode": "badge_only"
+      },
+      "visual_extraction": {
+        "model_id": "gemini-3.5-flash-lite",
+        "prompt_version": "gemini_visual_facts_v1.1.0-korean-retry",
+        "status": "extracted",
+        "verified_facts": [
+          {
+            "id": "v1",
+            "category": "product_type",
+            "value": "음료",
+            "confidence": "high"
+          },
+          {
+            "id": "v2",
+            "category": "color",
+            "value": "붉은색",
+            "confidence": "high"
+          },
+          {
+            "id": "v3",
+            "category": "container",
+            "value": "유리잔",
+            "confidence": "high"
+          },
+          {
+            "id": "v4",
+            "category": "visible_component",
+            "value": "얼음",
+            "confidence": "high"
+          },
+          {
+            "id": "v5",
+            "category": "visible_component",
+            "value": "과일 조각",
+            "confidence": "high"
+          },
+          {
+            "id": "v6",
+            "category": "arrangement",
+            "value": "잔의 테두리에 과일 조각이 꽂혀 있음",
+            "confidence": "high"
+          },
+          {
+            "id": "v7",
+            "category": "arrangement",
+            "value": "음료 위에 얼음이 떠 있음",
+            "confidence": "high"
+          }
+        ],
+        "rejected_observations": [],
+        "excluded_inferences": [
+          "시원함",
+          "달콤한 맛",
+          "신선한 수박",
+          "아삭한 식감",
+          "시원한 온도 체감"
+        ],
+        "notice": null,
+        "raw_output": "{\n  \"observations\": [\n    {\n      \"category\": \"product_type\",\n      \"value\": \"음료\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"color\",\n      \"value\": \"붉은색\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"container\",\n      \"value\": \"유리잔\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"얼음\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"visible_component\",\n      \"value\": \"과일 조각\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"arrangement\",\n      \"value\": \"잔의 테두리에 과일 조각이 꽂혀 있음\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"category\": \"arrangement\",\n      \"value\": \"음료 위에 얼음이 떠 있음\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"excluded_inferences\": [\n    \"시원함\",\n    \"달콤한 맛\",\n    \"신선한 수박\",\n    \"아삭한 식감\",\n    \"시원한 온도 체감\"\n  ]\n}"
+      },
+      "copy_generation": {
+        "model_id": "gpt-6-luna",
+        "prompt_version": "openai_copy_v1.10.18-request-aware-partial-recovery",
+        "status": "generated",
+        "generation_mode": "headline_and_subcopy",
+        "attempts": 1,
+        "notice": "상품 사실과 요청 맥락을 함께 반영하고 의미 기반 사실성·자연스러움 검증을 통과한 후보만 선택했습니다.",
+        "copies": [
+          {
+            "headline": "수박의 산뜻함을 한 모금",
+            "body": "무더운 오후, 시원한 풍미로 기분 전환해요",
+            "hashtags": [
+              "#수박주스",
+              "#여름한모금"
+            ]
+          },
+          {
+            "headline": "오후 기분, 산뜻하게 톡",
+            "body": "시원한 풍미로 무더위를 잠시 잊어요",
+            "hashtags": [
+              "#수박주스",
+              "#여름한모금"
+            ]
+          }
+        ],
+        "first_attempt_validation_issues": [],
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "raw_image_sent": false,
+            "visual_caption_sent_to_copy_model": false,
+            "filtered_visual_facts_sent": [
+              {
+                "category": "visible_component",
+                "value": "과일 조각"
+              }
+            ],
+            "message_cardinality": 2,
+            "raw_output": "{\"options\":[{\"headline\":\"수박의 산뜻함을 한 모금\",\"body\":\"무더운 오후, 시원한 풍미로 기분 전환해요.\"},{\"headline\":\"무더운 오후엔 잠깐 리프레시\",\"body\":\"수박의 산뜻함으로 기분을 바꿔보세요.\"},{\"headline\":\"오후 기분, 산뜻하게 톡!\",\"body\":\"시원한 풍미로 무더위를 잠시 잊어요.\"},{\"headline\":\"더운 오후에 딱, 산뜻한 한 모금\",\"body\":\"수박의 시원한 풍미로 기분 전환하세요.\"}]}",
+            "usage": {
+              "input_tokens": 709,
+              "cached_input_tokens": 0,
+              "output_tokens": 149,
+              "reasoning_tokens": 0,
+              "total_tokens": 858
+            },
+            "local_qc": [
+              {
+                "index": 1,
+                "headline": "수박의 산뜻함을 한 모금",
+                "body": "무더운 오후, 시원한 풍미로 기분 전환해요",
+                "issues": []
+              },
+              {
+                "index": 2,
+                "headline": "무더운 오후엔 잠깐 리프레시",
+                "body": "수박의 산뜻함으로 기분을 바꿔보세요",
+                "issues": [
+                  "PAIR_MISSING_FACTS"
+                ]
+              },
+              {
+                "index": 3,
+                "headline": "오후 기분, 산뜻하게 톡",
+                "body": "시원한 풍미로 무더위를 잠시 잊어요",
+                "issues": []
+              },
+              {
+                "index": 4,
+                "headline": "더운 오후에 딱, 산뜻한 한 모금",
+                "body": "수박의 시원한 풍미로 기분 전환하세요",
+                "issues": [
+                  "SAME_CLAIM_REPEATED"
+                ]
+              }
+            ],
+            "naturalness_judge": [
+              {
+                "index": 1,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "수박의 산뜻함과 무더운 오후의 기분 전환을 연결했고, 제목과 보조 문구의 표현도 크게 겹치지 않습니다. 발랄하고 간결한 광고 문구로 자연스럽습니다."
+              },
+              {
+                "index": 2,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 5,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "무더운 오후의 리프레시 상황을 제목에, 수박의 산뜻함을 보조 문구에 나눠 담아 요청을 잘 반영했습니다. 간결하고 경쾌합니다."
+              },
+              {
+                "index": 3,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "오후의 기분 전환을 발랄하게 표현하고, 보조 문구에서 시원한 풍미를 제시해 문구 간 역할이 잘 나뉩니다. 확인된 특징을 벗어나지 않습니다."
+              },
+              {
+                "index": 4,
+                "meaningful": true,
+                "naturalness": 5,
+                "ad_value": 4,
+                "grounded": true,
+                "menu_name_repeated": false,
+                "descriptive_caption": false,
+                "reason": "더운 오후와 산뜻한 한 모금으로 상황과 제품 특징을 연결한 자연스러운 문구입니다. 다만 제목과 보조 문구에 ‘산뜻한’과 ‘기분 전환’의 유사한 메시지가 있어 표현 분리가 다소 약합니다."
+              }
+            ],
+            "judge_usage": {
+              "input_tokens": 557,
+              "cached_input_tokens": 0,
+              "output_tokens": 384,
+              "reasoning_tokens": 0,
+              "total_tokens": 941
+            },
+            "qualified_count": 2,
+            "accepted_total": 2
+          }
+        ]
+      },
+      "final_validation_issues": [],
+      "checks": {
+        "fact_preservation_pass": true,
+        "duplicate_pass": true,
+        "length_pass": true,
+        "naturalness_rule_pass": true,
+        "final_validator_pass": true,
+        "overall_pass": true
+      },
+      "elapsed_seconds": 12.44,
+      "error": null
+    }
+  ]
+}

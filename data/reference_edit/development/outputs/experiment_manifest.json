@@ -1,0 +1,98 @@
+{
+  "experiment_date": "2026-11-11",
+  "experiment": "v0.3.2_mixed_sources_product_replacement_6_cases",
+  "prompt_version": "reference_image_edit_v0.3.2-ko",
+  "goal": "짧은 소상공인 카페 사장님 요청으로 새 상품이 명확히 식별되는지 확인",
+  "fixed_conditions": {
+    "source_manifest": "output/imagegen/advertising_image_2/edits/ad_concepts/mixed_sources_6_v0_3_2_requests.json",
+    "input_images": "AI 생성 원본 3장과 Pexels 원본 3장",
+    "user_requests": "확정된 짧은 상품 교체 요청 6건",
+    "model": "gpt-image-2.5-sunburst",
+    "size": "1024x1024",
+    "quality": "medium",
+    "output_format": "png"
+  },
+  "cases": [
+    {
+      "id": "M01",
+      "category": "음료",
+      "source_type": "ai_generated",
+      "concept": "여름 신메뉴 청포도 에이드",
+      "input_image": "output/imagegen/advertising_image_2/references/development/D02_citrus_ade.png",
+      "request": "시트러스 에이드를 청포도 에이드로 바꿔주세요. 레몬과 오렌지 대신 청포도와 탄산 기포가 보이게 하고 여름 신메뉴 느낌으로 만들어주세요.",
+      "request_sha256_prefix": "3ab22b0a9e64",
+      "output_image": "M01_green_grape_ade_ad.png",
+      "qa_status": "pass",
+      "qa_note": "감귤류가 제거되고 청포도와 탄산 기포가 분명하다. 일부 포도 단면이 장식적으로 표현됐지만 상품 식별에는 문제가 없다."
+    },
+    {
+      "id": "M02",
+      "category": "음료",
+      "source_type": "pexels",
+      "concept": "딸기 과육층이 보이는 딸기라떼",
+      "input_image": "output/imagegen/advertising_image_2/references/pexels_diverse/P01_matcha_latte.jpg",
+      "request": "말차라떼를 딸기라떼로 바꿔주세요. 컵 아래에는 딸기 과육층, 위에는 흰 우유층이 보이게 해주세요. 컵과 받침은 그대로 유지해주세요.",
+      "request_sha256_prefix": "62b2f7f0aa13",
+      "output_image": "M02_strawberry_latte_ad.png",
+      "qa_status": "pass",
+      "qa_note": "말차색이 제거되고 아래 딸기 과육층과 위 우유층이 분명하다. 원본 컵, 받침과 스푼 구성이 보존됐다."
+    },
+    {
+      "id": "M03",
+      "category": "디저트",
+      "source_type": "ai_generated",
+      "concept": "초코 생크림 케이크",
+      "input_image": "output/imagegen/advertising_image_2/references/development/D03_strawberry_cheesecake.png",
+      "request": "딸기 치즈케이크를 초코 생크림 케이크로 바꿔주세요. 딸기는 없애고 초콜릿 시트와 생크림 층이 잘 보이게 만들어주세요.",
+      "request_sha256_prefix": "da8033ce959f",
+      "output_image": "M03_chocolate_cream_cake_ad.png",
+      "qa_status": "pass",
+      "qa_note": "딸기와 치즈케이크 흔적 없이 초콜릿 시트와 크림층이 분명한 초코 생크림 케이크로 교체됐다."
+    },
+    {
+      "id": "M04",
+      "category": "디저트",
+      "source_type": "pexels",
+      "concept": "레몬 타르트 한 조각",
+      "input_image": "output/imagegen/advertising_image_2/references/pexels_diverse/P03_caramel_pudding.jpg",
+      "request": "카라멜 푸딩을 레몬 타르트 한 조각으로 바꿔주세요. 노란 레몬 크림과 바삭한 타르트 부분이 잘 보이게 하고 접시는 그대로 사용해주세요.",
+      "request_sha256_prefix": "013ca8871eed",
+      "output_image": "M04_lemon_tart_ad.png",
+      "qa_status": "pass",
+      "qa_note": "푸딩과 카라멜 소스가 제거되고 노란 레몬 크림과 타르트 쉘이 명확하다. 원본 접시와 장면이 유지됐다."
+    },
+    {
+      "id": "M05",
+      "category": "빵",
+      "source_type": "ai_generated",
+      "concept": "갓 구운 소금빵",
+      "input_image": "output/imagegen/advertising_image_2/references/development/D05_croissants.png",
+      "request": "크루아상을 소금빵으로 바꿔주세요. 크루아상의 겹은 없애고 매끈한 굽기 색과 소금 알갱이가 보이게 해주세요. 갓 구운 빵처럼 따뜻하게 만들어주세요.",
+      "request_sha256_prefix": "4a7488ec7e90",
+      "output_image": "M05_salt_bread_ad.png",
+      "qa_status": "pass_with_note",
+      "qa_note": "크루아상의 얇은 겹은 제거됐고 매끈한 굽기 색과 소금 결정이 보인다. 굽은 형태와 표면 이음선은 크루아상을 약간 연상시키지만 소금빵으로 식별 가능하다."
+    },
+    {
+      "id": "M06",
+      "category": "빵",
+      "source_type": "pexels",
+      "concept": "주말 브런치 베이글",
+      "input_image": "output/imagegen/advertising_image_2/references/pexels_diverse/P05_baguettes_final.jpg",
+      "request": "바게트를 베이글로 바꿔주세요. 길쭉한 빵은 남기지 말고 플레인과 참깨 베이글을 바구니에 담아 주말 브런치 메뉴처럼 만들어주세요.",
+      "request_sha256_prefix": "967145f24447",
+      "output_image": "M06_weekend_bagels_ad.png",
+      "qa_status": "pass",
+      "qa_note": "길쭉한 바게트가 남지 않았고 플레인과 참깨 베이글이 원본 바구니 안에 자연스럽게 배치됐다."
+    }
+  ],
+  "result": "manual_review_complete",
+  "qa_summary": {
+    "pass": 5,
+    "pass_with_note": 1,
+    "fail": 0,
+    "retry_count": 0,
+    "test_images_started": false
+  },
+  "comparison_sheet": "source_result_sheet.png"
+}

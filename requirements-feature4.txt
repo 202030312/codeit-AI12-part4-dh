@@ -1,0 +1,9 @@
+-r requirements.txt
+
+# 기능 4의 FLUX.2 Klein 로컬 추론용 선택 의존성입니다.
+# L4급 CUDA GPU 환경에서 설치하며, 일반 앱 화면 확인에는 필요하지 않습니다.
+diffusers @ git+https://github.com/huggingface/diffusers.git
+transformers>=4.57,<5
+safetensors>=0.6,<1
+sentencepiece>=0.2,<1
+hf_xet>=1,<2

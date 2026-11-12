@@ -1,0 +1,513 @@
+{
+  "feature_version": "image_ad_v0.4.1",
+  "cases_path": "samples/dataset/feature3_representative_12_cases.csv",
+  "cutout_dir": "samples/output/representative12/cutouts",
+  "count": 12,
+  "passed_count": 4,
+  "records": [
+    {
+      "case_id": "drink_studio",
+      "category": "drink",
+      "product_name_ko": "망고 스무디",
+      "request_mode": "request_only",
+      "menu_category": "iced_drink",
+      "image_purpose": "image_only",
+      "text_space": "none",
+      "style_template_id": null,
+      "style_template_label": null,
+      "resolved_settings": {
+        "background_mood": "bright_clean",
+        "color_tone": "blue_mint",
+        "product_position": "right",
+        "product_size": "large",
+        "margin": "narrow",
+        "include_shadow": false
+      },
+      "product_box": [
+        451,
+        151,
+        1000,
+        929
+      ],
+      "text_safe_areas": [],
+      "opaque_color_mean_difference": 0.2781,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "temp/feature3_final_development12/images/drink_studio.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": true,
+        "no_visible_blank_card": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "drink_busy",
+      "category": "drink",
+      "product_name_ko": "아이스 아메리카노",
+      "request_mode": "template_only",
+      "menu_category": "iced_drink",
+      "image_purpose": "image_only",
+      "text_space": "none",
+      "style_template_id": "fresh_mint",
+      "style_template_label": "fresh_mint",
+      "resolved_settings": {
+        "background_mood": "vivid_cheerful",
+        "color_tone": "blue_mint",
+        "product_position": "right",
+        "product_size": "large",
+        "margin": "narrow",
+        "include_shadow": true
+      },
+      "product_box": [
+        575,
+        151,
+        1000,
+        929
+      ],
+      "text_safe_areas": [],
+      "opaque_color_mean_difference": 0.6196,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "temp/feature3_final_development12/images/drink_busy.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": false,
+        "no_visible_blank_card": true
+      },
+      "passed": false
+    },
+    {
+      "case_id": "drink_lowlight",
+      "category": "drink",
+      "product_name_ko": "말차 라떼",
+      "request_mode": "request_and_template",
+      "menu_category": "iced_drink",
+      "image_purpose": "image_only",
+      "text_space": "none",
+      "style_template_id": "premium_dark",
+      "style_template_label": "premium_dark",
+      "resolved_settings": {
+        "background_mood": "calm_premium",
+        "color_tone": "dark_gold",
+        "product_position": "center",
+        "product_size": "default",
+        "margin": "wide",
+        "include_shadow": true
+      },
+      "product_box": [
+        216,
+        322,
+        864,
+        758
+      ],
+      "text_safe_areas": [],
+      "opaque_color_mean_difference": 0.131,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "temp/feature3_final_development12/images/drink_lowlight.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": false,
+        "no_visible_blank_card": true
+      },
+      "passed": false
+    },
+    {
+      "case_id": "drink_window",
+      "category": "drink",
+      "product_name_ko": "에스프레소 토닉",
+      "request_mode": "request_only",
+      "menu_category": "iced_drink",
+      "image_purpose": "image_only",
+      "text_space": "none",
+      "style_template_id": null,
+      "style_template_label": null,
+      "resolved_settings": {
+        "background_mood": "bright_clean",
+        "color_tone": "white_cream",
+        "product_position": "left",
+        "product_size": "default",
+        "margin": "wide",
+        "include_shadow": true
+      },
+      "product_box": [
+        205,
+        216,
+        573,
+        864
+      ],
+      "text_safe_areas": [],
+      "opaque_color_mean_difference": 0.2947,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "temp/feature3_final_development12/images/drink_window.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": true,
+        "no_visible_blank_card": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "dessert_studio",
+      "category": "dessert",
+      "product_name_ko": "바스크 치즈케이크",
+      "request_mode": "template_only",
+      "menu_category": "dessert",
+      "image_purpose": "image_only",
+      "text_space": "none",
+      "style_template_id": "minimal_cream",
+      "style_template_label": "minimal_cream",
+      "resolved_settings": {
+        "background_mood": "warm_soft",
+        "color_tone": "white_cream",
+        "product_position": "center",
+        "product_size": "default",
+        "margin": "wide",
+        "include_shadow": true
+      },
+      "product_box": [
+        216,
+        267,
+        864,
+        813
+      ],
+      "text_safe_areas": [],
+      "opaque_color_mean_difference": 0.3027,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "temp/feature3_final_development12/images/dessert_studio.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": false,
+        "no_visible_blank_card": true
+      },
+      "passed": false
+    },
+    {
+      "case_id": "dessert_busy",
+      "category": "dessert",
+      "product_name_ko": "브라우니 아이스크림",
+      "request_mode": "request_and_template",
+      "menu_category": "dessert",
+      "image_purpose": "image_only",
+      "text_space": "none",
+      "style_template_id": "pastel_pink",
+      "style_template_label": "pastel_pink",
+      "resolved_settings": {
+        "background_mood": "vivid_cheerful",
+        "color_tone": "blue_mint",
+        "product_position": "right",
+        "product_size": "large",
+        "margin": "narrow",
+        "include_shadow": true
+      },
+      "product_box": [
+        222,
+        312,
+        1000,
+        768
+      ],
+      "text_safe_areas": [],
+      "opaque_color_mean_difference": 0.5108,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "temp/feature3_final_development12/images/dessert_busy.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": false,
+        "no_visible_blank_card": true
+      },
+      "passed": false
+    },
+    {
+      "case_id": "dessert_lowlight",
+      "category": "dessert",
+      "product_name_ko": "까눌레",
+      "request_mode": "request_only",
+      "menu_category": "dessert",
+      "image_purpose": "image_only",
+      "text_space": "none",
+      "style_template_id": null,
+      "style_template_label": null,
+      "resolved_settings": {
+        "background_mood": "calm_premium",
+        "color_tone": "dark_gold",
+        "product_position": "center",
+        "product_size": "small",
+        "margin": "wide",
+        "include_shadow": true
+      },
+      "product_box": [
+        291,
+        355,
+        788,
+        724
+      ],
+      "text_safe_areas": [],
+      "opaque_color_mean_difference": 0.1367,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "temp/feature3_final_development12/images/dessert_lowlight.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": true,
+        "no_visible_blank_card": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "dessert_window",
+      "category": "dessert",
+      "product_name_ko": "크렘 브륄레",
+      "request_mode": "template_only",
+      "menu_category": "dessert",
+      "image_purpose": "image_only",
+      "text_space": "none",
+      "style_template_id": "pastel_pink",
+      "style_template_label": "pastel_pink",
+      "resolved_settings": {
+        "background_mood": "warm_soft",
+        "color_tone": "pink_lavender",
+        "product_position": "left",
+        "product_size": "default",
+        "margin": "default",
+        "include_shadow": true
+      },
+      "product_box": [
+        140,
+        310,
+        788,
+        769
+      ],
+      "text_safe_areas": [],
+      "opaque_color_mean_difference": 0.3242,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "temp/feature3_final_development12/images/dessert_window.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": false,
+        "no_visible_blank_card": true
+      },
+      "passed": false
+    },
+    {
+      "case_id": "bread_studio",
+      "category": "bread",
+      "product_name_ko": "바게트",
+      "request_mode": "request_and_template",
+      "menu_category": "bread",
+      "image_purpose": "image_only",
+      "text_space": "none",
+      "style_template_id": "clean_white",
+      "style_template_label": "clean_white",
+      "resolved_settings": {
+        "background_mood": "bright_clean",
+        "color_tone": "white_cream",
+        "product_position": "center",
+        "product_size": "large",
+        "margin": "default",
+        "include_shadow": false
+      },
+      "product_box": [
+        151,
+        219,
+        929,
+        861
+      ],
+      "text_safe_areas": [],
+      "opaque_color_mean_difference": 0.3319,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "temp/feature3_final_development12/images/bread_studio.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": false,
+        "no_visible_blank_card": true
+      },
+      "passed": false
+    },
+    {
+      "case_id": "bread_busy",
+      "category": "bread",
+      "product_name_ko": "갈릭 브레드",
+      "request_mode": "request_only",
+      "menu_category": "bread",
+      "image_purpose": "image_only",
+      "text_space": "none",
+      "style_template_id": null,
+      "style_template_label": null,
+      "resolved_settings": {
+        "background_mood": "vivid_cheerful",
+        "color_tone": "pink_lavender",
+        "product_position": "left",
+        "product_size": "large",
+        "margin": "narrow",
+        "include_shadow": false
+      },
+      "product_box": [
+        80,
+        287,
+        858,
+        792
+      ],
+      "text_safe_areas": [],
+      "opaque_color_mean_difference": 0.4615,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "temp/feature3_final_development12/images/bread_busy.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": true,
+        "no_visible_blank_card": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "bread_lowlight",
+      "category": "bread",
+      "product_name_ko": "카다멈 번",
+      "request_mode": "template_only",
+      "menu_category": "bread",
+      "image_purpose": "image_only",
+      "text_space": "none",
+      "style_template_id": "premium_dark",
+      "style_template_label": "premium_dark",
+      "resolved_settings": {
+        "background_mood": "calm_premium",
+        "color_tone": "dark_gold",
+        "product_position": "center",
+        "product_size": "default",
+        "margin": "wide",
+        "include_shadow": true
+      },
+      "product_box": [
+        216,
+        290,
+        864,
+        790
+      ],
+      "text_safe_areas": [],
+      "opaque_color_mean_difference": 0.1904,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "temp/feature3_final_development12/images/bread_lowlight.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": false,
+        "no_visible_blank_card": true
+      },
+      "passed": false
+    },
+    {
+      "case_id": "bread_window",
+      "category": "bread",
+      "product_name_ko": "시나몬롤",
+      "request_mode": "request_and_template",
+      "menu_category": "bread",
+      "image_purpose": "image_only",
+      "text_space": "none",
+      "style_template_id": "natural_beige",
+      "style_template_label": "natural_beige",
+      "resolved_settings": {
+        "background_mood": "warm_soft",
+        "color_tone": "beige_brown",
+        "product_position": "right",
+        "product_size": "default",
+        "margin": "default",
+        "include_shadow": true
+      },
+      "product_box": [
+        292,
+        288,
+        940,
+        792
+      ],
+      "text_safe_areas": [],
+      "opaque_color_mean_difference": 0.23,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "temp/feature3_final_development12/images/bread_window.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": false,
+        "no_visible_blank_card": true
+      },
+      "passed": false
+    }
+  ]
+}

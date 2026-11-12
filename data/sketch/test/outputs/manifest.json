@@ -1,0 +1,62 @@
+{
+  "experiment_id": "feature4_flux2_klein_4cases_v0.2.0_annotation_policy",
+  "model": "black-forest-labs/FLUX.2-klein-4B",
+  "execution": "Google Colab local inference",
+  "hf_token_required": false,
+  "count": 4,
+  "generation": {
+    "width": 1024,
+    "height": 1024,
+    "steps": 4,
+    "guidance_scale": 1.0,
+    "dtype": "torch.bfloat16",
+    "gpu": "NVIDIA L4",
+    "gpu_memory_gb": 22.0
+  },
+  "records": [
+    {
+      "case_id": "test_01_black_sesame_latte",
+      "category": "음료",
+      "product_name_ko": "흑임자 라떼",
+      "request_ko": "고소한 흑임자 라떼를 따뜻한 도자기 잔에 담아 만들어주세요. 부드러운 겨울 오후 자연광을 사용하고 왼쪽 위에는 주변 배경이 자연스럽게 이어지는 단순한 여백을 남겨주세요.",
+      "request_en": "Create a warm black sesame latte in a ceramic mug with a smooth dark sesame swirl on the foam. Use soft winter-afternoon natural light. Leave the upper-left as a simple seamless continuation of the surrounding background for later copy placement, with no box, panel, frame, sign, or overlay.",
+      "final_prompt": "Primary request:\nCreate a warm black sesame latte in a ceramic mug with a smooth dark sesame swirl on the foam. Use soft winter-afternoon natural light. Leave the upper-left as a simple seamless continuation of the surrounding background for later copy placement, with no box, panel, frame, sign, or overlay.\n\nComposition and rendering rules:\nThe uploaded image is a rough layout sketch for a small cafe product advertisement, not a visual style reference and not a finished image.\nBefore rendering, distinguish intended scene objects from production annotations.\nTreat arrows, rectangular outlines, guide boxes, guide lines, labels, and handwritten marks as production annotations by default.\nUse annotations only to infer emphasis, arrangement direction, approximate position, relative scale, camera viewpoint, prop placement, and copy-space location.\nDo not reproduce the visual shape, color, stroke, outline, or shadow of any annotation in the final image.\nOnly include a visible arrow, box, panel, frame, sign, or handwritten mark when the primary request explicitly asks for that element in the final advertisement.\nWhen a rectangle indicates copy space, use only its approximate location and extent. Do not render the rectangle itself.\nRender copy space as a seamless and natural continuation of the surrounding wall, tabletop, or background. It must not appear as a white patch, differently colored region, translucent overlay, card, panel, sign, frame, border, or box.\nKeep copy space visually simple and low-detail. Do not place products, props, highlights, strong shadows, or busy patterns in that area.\nTurn the described product into appetizing photorealistic commercial food photography.\nPreserve the intended layout but use physically plausible perspective, lighting, materials, shadows, and food texture.\nOnly add props that are directly required by the request or clearly indicated as intended scene objects.\nDo not render letters, words, prices, logos, watermarks, interface elements, or illustration lines.\nThe final output must look like a real professionally photographed cafe advertisement image.",
+      "seed": 4201,
+      "elapsed_seconds": 26.1,
+      "output_file": "images/test_01_black_sesame_latte.png"
+    },
+    {
+      "case_id": "test_02_peach_iced_tea",
+      "category": "음료",
+      "product_name_ko": "복숭아 아이스티",
+      "request_ko": "복숭아 과육과 얼음이 보이는 시원한 복숭아 아이스티로 만들어주세요. 밝고 산뜻한 여름 분위기로 연출하고 오른쪽 위에는 주변 배경이 자연스럽게 이어지는 단순한 여백을 남겨주세요.",
+      "request_en": "Create a cold peach iced tea in a tall clear glass with visible peach pieces and ice. Use a bright fresh summer mood. Leave the upper-right as a simple seamless continuation of the surrounding background for later copy placement, with no box, panel, frame, sign, or overlay.",
+      "final_prompt": "Primary request:\nCreate a cold peach iced tea in a tall clear glass with visible peach pieces and ice. Use a bright fresh summer mood. Leave the upper-right as a simple seamless continuation of the surrounding background for later copy placement, with no box, panel, frame, sign, or overlay.\n\nComposition and rendering rules:\nThe uploaded image is a rough layout sketch for a small cafe product advertisement, not a visual style reference and not a finished image.\nBefore rendering, distinguish intended scene objects from production annotations.\nTreat arrows, rectangular outlines, guide boxes, guide lines, labels, and handwritten marks as production annotations by default.\nUse annotations only to infer emphasis, arrangement direction, approximate position, relative scale, camera viewpoint, prop placement, and copy-space location.\nDo not reproduce the visual shape, color, stroke, outline, or shadow of any annotation in the final image.\nOnly include a visible arrow, box, panel, frame, sign, or handwritten mark when the primary request explicitly asks for that element in the final advertisement.\nWhen a rectangle indicates copy space, use only its approximate location and extent. Do not render the rectangle itself.\nRender copy space as a seamless and natural continuation of the surrounding wall, tabletop, or background. It must not appear as a white patch, differently colored region, translucent overlay, card, panel, sign, frame, border, or box.\nKeep copy space visually simple and low-detail. Do not place products, props, highlights, strong shadows, or busy patterns in that area.\nTurn the described product into appetizing photorealistic commercial food photography.\nPreserve the intended layout but use physically plausible perspective, lighting, materials, shadows, and food texture.\nOnly add props that are directly required by the request or clearly indicated as intended scene objects.\nDo not render letters, words, prices, logos, watermarks, interface elements, or illustration lines.\nThe final output must look like a real professionally photographed cafe advertisement image.",
+      "seed": 4202,
+      "elapsed_seconds": 22.47,
+      "output_file": "images/test_02_peach_iced_tea.png"
+    },
+    {
+      "case_id": "test_03_brownie_ice_cream",
+      "category": "디저트",
+      "product_name_ko": "브라우니 아이스크림",
+      "request_ko": "따뜻한 초콜릿 브라우니 위에 바닐라 아이스크림 한 스쿱이 살짝 녹는 모습으로 만들어주세요. 포근한 카페 자연광을 사용하고 오른쪽 위에는 자연스러운 여백을 남겨주세요.",
+      "request_en": "Create a warm chocolate brownie topped with one scoop of vanilla ice cream beginning to melt slightly. Use cozy cafe daylight. Leave the upper-right as a simple seamless continuation of the surrounding background for later copy placement, with no box, panel, frame, sign, or overlay.",
+      "final_prompt": "Primary request:\nCreate a warm chocolate brownie topped with one scoop of vanilla ice cream beginning to melt slightly. Use cozy cafe daylight. Leave the upper-right as a simple seamless continuation of the surrounding background for later copy placement, with no box, panel, frame, sign, or overlay.\n\nComposition and rendering rules:\nThe uploaded image is a rough layout sketch for a small cafe product advertisement, not a visual style reference and not a finished image.\nBefore rendering, distinguish intended scene objects from production annotations.\nTreat arrows, rectangular outlines, guide boxes, guide lines, labels, and handwritten marks as production annotations by default.\nUse annotations only to infer emphasis, arrangement direction, approximate position, relative scale, camera viewpoint, prop placement, and copy-space location.\nDo not reproduce the visual shape, color, stroke, outline, or shadow of any annotation in the final image.\nOnly include a visible arrow, box, panel, frame, sign, or handwritten mark when the primary request explicitly asks for that element in the final advertisement.\nWhen a rectangle indicates copy space, use only its approximate location and extent. Do not render the rectangle itself.\nRender copy space as a seamless and natural continuation of the surrounding wall, tabletop, or background. It must not appear as a white patch, differently colored region, translucent overlay, card, panel, sign, frame, border, or box.\nKeep copy space visually simple and low-detail. Do not place products, props, highlights, strong shadows, or busy patterns in that area.\nTurn the described product into appetizing photorealistic commercial food photography.\nPreserve the intended layout but use physically plausible perspective, lighting, materials, shadows, and food texture.\nOnly add props that are directly required by the request or clearly indicated as intended scene objects.\nDo not render letters, words, prices, logos, watermarks, interface elements, or illustration lines.\nThe final output must look like a real professionally photographed cafe advertisement image.",
+      "seed": 4203,
+      "elapsed_seconds": 22.21,
+      "output_file": "images/test_03_brownie_ice_cream.png"
+    },
+    {
+      "case_id": "test_04_ham_cheese_croissant",
+      "category": "빵",
+      "product_name_ko": "햄치즈 크루아상",
+      "request_ko": "겉은 바삭하고 속에는 햄과 치즈가 풍성하게 보이는 크루아상 샌드위치로 만들어주세요. 밝은 아침 자연광을 사용하고 왼쪽 위에는 주변 배경이 자연스럽게 이어지는 단순한 여백을 남겨주세요.",
+      "request_en": "Create a crisp ham-and-cheese croissant sandwich cut into two halves with the filling clearly visible. Use bright morning natural light. Leave the upper-left as a simple seamless continuation of the surrounding background for later copy placement, with no box, panel, frame, sign, or overlay.",
+      "final_prompt": "Primary request:\nCreate a crisp ham-and-cheese croissant sandwich cut into two halves with the filling clearly visible. Use bright morning natural light. Leave the upper-left as a simple seamless continuation of the surrounding background for later copy placement, with no box, panel, frame, sign, or overlay.\n\nComposition and rendering rules:\nThe uploaded image is a rough layout sketch for a small cafe product advertisement, not a visual style reference and not a finished image.\nBefore rendering, distinguish intended scene objects from production annotations.\nTreat arrows, rectangular outlines, guide boxes, guide lines, labels, and handwritten marks as production annotations by default.\nUse annotations only to infer emphasis, arrangement direction, approximate position, relative scale, camera viewpoint, prop placement, and copy-space location.\nDo not reproduce the visual shape, color, stroke, outline, or shadow of any annotation in the final image.\nOnly include a visible arrow, box, panel, frame, sign, or handwritten mark when the primary request explicitly asks for that element in the final advertisement.\nWhen a rectangle indicates copy space, use only its approximate location and extent. Do not render the rectangle itself.\nRender copy space as a seamless and natural continuation of the surrounding wall, tabletop, or background. It must not appear as a white patch, differently colored region, translucent overlay, card, panel, sign, frame, border, or box.\nKeep copy space visually simple and low-detail. Do not place products, props, highlights, strong shadows, or busy patterns in that area.\nTurn the described product into appetizing photorealistic commercial food photography.\nPreserve the intended layout but use physically plausible perspective, lighting, materials, shadows, and food texture.\nOnly add props that are directly required by the request or clearly indicated as intended scene objects.\nDo not render letters, words, prices, logos, watermarks, interface elements, or illustration lines.\nThe final output must look like a real professionally photographed cafe advertisement image.",
+      "seed": 4204,
+      "elapsed_seconds": 21.77,
+      "output_file": "images/test_04_ham_cheese_croissant.png"
+    }
+  ]
+}

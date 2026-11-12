@@ -1,0 +1,83 @@
+{
+  "run_date": "2026-11-11",
+  "feature": "advertising_image_maker_2",
+  "experiment": "v0.3.2_unseen_test_sources_final_6_cases",
+  "asset_type": "cafe_advertising_key_visual",
+  "model": "gpt-image-2.5-sunburst",
+  "size": "1024x1024",
+  "quality": "medium",
+  "output_format": "png",
+  "prompt_version": "reference_image_edit_v0.3.2-ko",
+  "design": {
+    "total_cases": 6,
+    "categories": {
+      "음료": 2,
+      "디저트": 2,
+      "빵": 2
+    },
+    "request_types": {
+      "product_preservation_scene_edit": 3,
+      "product_replacement": 3,
+      "explicit_camera_angle_change": 1,
+      "copy_space_layout": 3,
+      "container_or_package_change": 1
+    },
+    "goal": "개발에 사용하지 않은 테스트 이미지에서 상품 보존, 상품 교체, 광고 장면 재구성과 카메라 각도 변경을 최종 확인"
+  },
+  "cases": [
+    {
+      "id": "T01",
+      "category": "음료",
+      "variant": "preserve_product_camera_change",
+      "concept": "오후 햇살의 말차라떼",
+      "input_image": "../../references/test/T01_matcha_latte.png",
+      "request": "말차라떼와 유리잔은 그대로 두고 위에서 45도 내려다본 구도로 바꿔주세요. 밝은 오후 햇살이 드는 테이블에 놓고 오른쪽 위는 문구를 넣을 수 있게 비워주세요.",
+      "output_image": "T01_matcha_latte_angle_ad.png"
+    },
+    {
+      "id": "T02",
+      "category": "음료",
+      "variant": "preserve_product_scene_edit",
+      "concept": "비 오는 저녁의 핫초코",
+      "input_image": "../../references/test/T02_hot_chocolate.png",
+      "request": "비 오는 저녁에 올릴 핫초코 홍보 사진으로 만들어주세요. 핫초코와 머그컵은 그대로 두고 창가에 빗방울이 보이는 따뜻한 카페 분위기로 바꿔주세요. 왼쪽 위에는 문구를 넣을 자리를 비워주세요.",
+      "output_image": "T02_rainy_evening_hot_chocolate_ad.png"
+    },
+    {
+      "id": "T03",
+      "category": "디저트",
+      "variant": "replace_product",
+      "concept": "블루베리 치즈케이크",
+      "input_image": "../../references/test/T03_fruit_tart.png",
+      "request": "과일 타르트를 블루베리 치즈케이크 한 조각으로 바꿔주세요. 여러 과일은 없애고 치즈케이크 단면과 블루베리 토핑이 잘 보이게 해주세요. 접시는 그대로 사용해주세요.",
+      "output_image": "T03_blueberry_cheesecake_ad.png"
+    },
+    {
+      "id": "T04",
+      "category": "디저트",
+      "variant": "replace_product",
+      "concept": "여름 한정 딸기빙수",
+      "input_image": "../../references/test/T04_mango_bingsu.png",
+      "request": "망고빙수를 여름 한정 딸기빙수로 바꿔주세요. 망고는 남기지 말고 생딸기 조각과 딸기 소스가 눈꽃 얼음 위에 보이게 해주세요. 그릇과 숟가락은 그대로 사용하고 전체 분위기는 시원하고 밝게 만들어주세요.",
+      "output_image": "T04_strawberry_bingsu_ad.png"
+    },
+    {
+      "id": "T05",
+      "category": "빵",
+      "variant": "replace_product",
+      "concept": "햄치즈 크루아상 샌드위치",
+      "input_image": "../../references/test/T05_bagel_sandwich.png",
+      "request": "배달앱에 올릴 사진이 필요해요. 베이글 샌드위치를 햄치즈 크루아상 샌드위치로 바꾸고, 베이글 모양은 남기지 말아주세요. 결이 살아 있는 크루아상 사이에 햄, 치즈와 채소가 잘 보이도록 상품을 조금 더 크게 보여주세요. 접시는 그대로 사용해주세요.",
+      "output_image": "T05_croissant_sandwich_ad.png"
+    },
+    {
+      "id": "T06",
+      "category": "빵",
+      "variant": "preserve_product_package_change",
+      "concept": "단팥빵 선물 세트",
+      "input_image": "../../references/test/T06_red_bean_buns.png",
+      "request": "단팥빵 세 개는 지금 모습 그대로 살려서 작은 선물 세트 사진으로 만들어주세요. 나무 쟁반 대신 크라프트 선물 상자에 담고 밝고 정갈한 느낌으로 바꿔주세요. 오른쪽에는 선물 안내 문구를 넣을 수 있게 공간을 비워주세요.",
+      "output_image": "T06_red_bean_bun_gift_set_ad.png"
+    }
+  ]
+}

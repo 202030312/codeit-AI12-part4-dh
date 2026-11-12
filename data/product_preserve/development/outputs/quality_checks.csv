@@ -1,0 +1,13 @@
+﻿case_id,request_mode,menu_category,image_purpose,text_space,style_template_id,shape_preserved,color_preserved,position_applied,size_applied,product_not_cropped,preview_matches_final,output_is_1080_square,text_safe_area_reserved,template_recommended_for_category,no_visible_blank_card,passed
+drink_studio,request_only,iced_drink,image_only,none,,True,True,True,True,True,True,True,True,True,True,True
+drink_busy,template_only,iced_drink,image_only,none,fresh_mint,True,True,True,True,True,True,True,True,False,True,False
+drink_lowlight,request_and_template,iced_drink,image_only,none,premium_dark,True,True,True,True,True,True,True,True,False,True,False
+drink_window,request_only,iced_drink,image_only,none,,True,True,True,True,True,True,True,True,True,True,True
+dessert_studio,template_only,dessert,image_only,none,minimal_cream,True,True,True,True,True,True,True,True,False,True,False
+dessert_busy,request_and_template,dessert,image_only,none,pastel_pink,True,True,True,True,True,True,True,True,False,True,False
+dessert_lowlight,request_only,dessert,image_only,none,,True,True,True,True,True,True,True,True,True,True,True
+dessert_window,template_only,dessert,image_only,none,pastel_pink,True,True,True,True,True,True,True,True,False,True,False
+bread_studio,request_and_template,bread,image_only,none,clean_white,True,True,True,True,True,True,True,True,False,True,False
+bread_busy,request_only,bread,image_only,none,,True,True,True,True,True,True,True,True,True,True,True
+bread_lowlight,template_only,bread,image_only,none,premium_dark,True,True,True,True,True,True,True,True,False,True,False
+bread_window,request_and_template,bread,image_only,none,natural_beige,True,True,True,True,True,True,True,True,False,True,False

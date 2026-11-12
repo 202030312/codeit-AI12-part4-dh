@@ -1,0 +1,38 @@
+[
+  {
+    "case_id": "test_01_black_sesame_latte",
+    "category": "음료",
+    "product_name_ko": "흑임자 라떼",
+    "image_filename": "01_black_sesame_latte_sketch.png",
+    "request_ko": "고소한 흑임자 라떼를 따뜻한 도자기 잔에 담아 만들어주세요. 부드러운 겨울 오후 자연광을 사용하고 왼쪽 위에는 주변 배경이 자연스럽게 이어지는 단순한 여백을 남겨주세요.",
+    "request_en": "Create a warm black sesame latte in a ceramic mug with a smooth dark sesame swirl on the foam. Use soft winter-afternoon natural light. Leave the upper-left as a simple seamless continuation of the surrounding background for later copy placement, with no box, panel, frame, sign, or overlay.",
+    "seed": 4201
+  },
+  {
+    "case_id": "test_02_peach_iced_tea",
+    "category": "음료",
+    "product_name_ko": "복숭아 아이스티",
+    "image_filename": "02_peach_iced_tea_sketch.png",
+    "request_ko": "복숭아 과육과 얼음이 보이는 시원한 복숭아 아이스티로 만들어주세요. 밝고 산뜻한 여름 분위기로 연출하고 오른쪽 위에는 주변 배경이 자연스럽게 이어지는 단순한 여백을 남겨주세요.",
+    "request_en": "Create a cold peach iced tea in a tall clear glass with visible peach pieces and ice. Use a bright fresh summer mood. Leave the upper-right as a simple seamless continuation of the surrounding background for later copy placement, with no box, panel, frame, sign, or overlay.",
+    "seed": 4202
+  },
+  {
+    "case_id": "test_03_brownie_ice_cream",
+    "category": "디저트",
+    "product_name_ko": "브라우니 아이스크림",
+    "image_filename": "03_brownie_ice_cream_sketch.png",
+    "request_ko": "따뜻한 초콜릿 브라우니 위에 바닐라 아이스크림 한 스쿱이 살짝 녹는 모습으로 만들어주세요. 포근한 카페 자연광을 사용하고 오른쪽 위에는 자연스러운 여백을 남겨주세요.",
+    "request_en": "Create a warm chocolate brownie topped with one scoop of vanilla ice cream beginning to melt slightly. Use cozy cafe daylight. Leave the upper-right as a simple seamless continuation of the surrounding background for later copy placement, with no box, panel, frame, sign, or overlay.",
+    "seed": 4203
+  },
+  {
+    "case_id": "test_04_ham_cheese_croissant",
+    "category": "빵",
+    "product_name_ko": "햄치즈 크루아상",
+    "image_filename": "04_ham_cheese_croissant_sketch.png",
+    "request_ko": "겉은 바삭하고 속에는 햄과 치즈가 풍성하게 보이는 크루아상 샌드위치로 만들어주세요. 밝은 아침 자연광을 사용하고 왼쪽 위에는 주변 배경이 자연스럽게 이어지는 단순한 여백을 남겨주세요.",
+    "request_en": "Create a crisp ham-and-cheese croissant sandwich cut into two halves with the filling clearly visible. Use bright morning natural light. Leave the upper-left as a simple seamless continuation of the surrounding background for later copy placement, with no box, panel, frame, sign, or overlay.",
+    "seed": 4204
+  }
+]

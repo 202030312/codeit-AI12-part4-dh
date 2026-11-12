@@ -1,0 +1,13 @@
+﻿case_id,product_name,visual_status,verified_fact_count,copy_status,generation_mode,attempts,fact_preservation_pass,duplicate_pass,length_pass,naturalness_rule_pass,final_validator_pass,overall_pass,elapsed_seconds,error
+test_bread_cream_brioche,크림 브리오슈 번,extracted,8,generated,headline_and_subcopy,1,True,True,True,True,True,True,20.59,
+test_bread_olive,올리브빵,extracted,7,fallback,headline_and_subcopy,2,True,True,True,True,True,True,27.95,
+test_bread_red_bean,단팥빵,omitted,0,retried,headline_and_subcopy,2,True,True,True,True,True,True,24.78,
+test_bread_salt,소금빵,extracted,7,retried,headline_and_subcopy,2,True,True,True,True,True,True,19.83,
+test_dessert_fruit_tart,과일 타르트,extracted,10,generated,headline_and_subcopy,1,True,True,True,True,True,True,20.45,
+test_dessert_mango_bingsu,망고 빙수,extracted,7,retried,headline_and_subcopy,2,True,True,True,True,True,True,19.65,
+test_dessert_mont_blanc,몽블랑,extracted,7,generated,headline_and_subcopy,1,True,True,True,True,True,True,11.53,
+test_dessert_pavlova,파블로바,extracted,9,generated,headline_and_subcopy,1,True,True,True,True,True,True,12.04,
+test_drink_black_sesame,흑임자 라떼,extracted,7,generated,headline_and_subcopy,1,True,True,True,True,True,True,13.26,
+test_drink_cappuccino,카푸치노,extracted,7,generated,headline_and_subcopy,1,True,True,True,True,True,True,13.88,
+test_drink_earl_grey,얼그레이 밀크티,extracted,7,generated,headline_and_subcopy,1,True,True,True,True,True,True,12.09,
+test_drink_watermelon,수박 주스,extracted,7,generated,headline_and_subcopy,1,True,True,True,True,True,True,12.44,

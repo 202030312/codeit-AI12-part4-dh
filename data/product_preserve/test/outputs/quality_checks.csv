@@ -1,0 +1,13 @@
+﻿case_id,request_mode,menu_category,image_purpose,text_space,style_template_id,shape_preserved,color_preserved,position_applied,size_applied,product_not_cropped,preview_matches_final,output_is_1080_square,text_safe_area_reserved,template_recommended_for_category,no_visible_blank_card,passed
+test_bread_cream_brioche,template_only,bread,image_only,none,cream,True,True,True,True,True,True,True,True,True,True,True
+test_bread_olive,template_only,bread,copy_later,right,natural,True,True,True,True,True,True,True,True,True,True,True
+test_bread_red_bean,template_only,bread,copy_later,top,berry,True,True,True,True,True,True,True,True,False,True,False
+test_bread_salt,template_only,bread,copy_later,bottom,promo,True,True,True,True,True,True,True,True,True,True,True
+test_dessert_fruit_tart,template_only,dessert,image_only,none,berry,True,True,True,True,True,True,True,True,True,True,True
+test_dessert_mango_bingsu,template_only,dessert,copy_later,left,promo,True,True,True,True,True,True,True,True,False,True,False
+test_dessert_mont_blanc,template_only,dessert,copy_later,right,night,True,True,True,True,True,True,True,True,True,True,True
+test_dessert_pavlova,template_only,dessert,copy_later,auto,cream,True,True,True,True,True,True,True,True,True,True,True
+test_drink_black_sesame,template_only,iced_drink,copy_later,left,night,True,True,True,True,True,True,True,True,False,True,False
+test_drink_cappuccino,template_only,hot_drink,image_only,none,clean,True,True,True,True,True,True,True,True,False,True,False
+test_drink_earl_grey,template_only,hot_drink,copy_later,bottom,natural,True,True,True,True,True,True,True,True,True,True,True
+test_drink_watermelon,template_only,iced_drink,image_only,none,clean,True,True,True,True,True,True,True,True,True,True,True

@@ -1,0 +1,569 @@
+{
+  "feature_version": "image_ad_v0.4.1",
+  "cases_path": "samples/dataset/feature3_final_test_12_cases.csv",
+  "cutout_dir": "samples/output/final_test_12/cutouts",
+  "count": 12,
+  "passed_count": 8,
+  "records": [
+    {
+      "case_id": "test_bread_cream_brioche",
+      "category": "bread",
+      "product_name_ko": "크림 브리오슈 번",
+      "request_mode": "template_only",
+      "menu_category": "bread",
+      "image_purpose": "image_only",
+      "text_space": "none",
+      "style_template_id": "cream",
+      "style_template_label": "미니멀 크림",
+      "resolved_settings": {
+        "background_mood": "warm_soft",
+        "color_tone": "white_cream",
+        "product_position": "center",
+        "product_size": "default",
+        "margin": "wide",
+        "include_shadow": true
+      },
+      "product_box": [
+        130,
+        170,
+        950,
+        930
+      ],
+      "text_safe_areas": [],
+      "opaque_color_mean_difference": 0.1815,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "samples/output/final_test_12/after_v1/feature3/images/test_bread_cream_brioche.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": true,
+        "no_visible_blank_card": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "test_bread_olive",
+      "category": "bread",
+      "product_name_ko": "올리브빵",
+      "request_mode": "template_only",
+      "menu_category": "bread",
+      "image_purpose": "copy_later",
+      "text_space": "right",
+      "style_template_id": "natural",
+      "style_template_label": "내추럴 베이커리",
+      "resolved_settings": {
+        "background_mood": "warm_soft",
+        "color_tone": "beige_brown",
+        "product_position": "center",
+        "product_size": "large",
+        "margin": "default",
+        "include_shadow": true
+      },
+      "product_box": [
+        55,
+        428,
+        605,
+        742
+      ],
+      "text_safe_areas": [
+        [
+          625,
+          75,
+          1025,
+          1005
+        ]
+      ],
+      "opaque_color_mean_difference": 0.0902,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "samples/output/final_test_12/after_v1/feature3/images/test_bread_olive.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": true,
+        "no_visible_blank_card": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "test_bread_red_bean",
+      "category": "bread",
+      "product_name_ko": "단팥빵",
+      "request_mode": "template_only",
+      "menu_category": "bread",
+      "image_purpose": "copy_later",
+      "text_space": "top",
+      "style_template_id": "berry",
+      "style_template_label": "딸기 크림",
+      "resolved_settings": {
+        "background_mood": "warm_soft",
+        "color_tone": "pink_lavender",
+        "product_position": "right",
+        "product_size": "default",
+        "margin": "default",
+        "include_shadow": true
+      },
+      "product_box": [
+        125,
+        434,
+        955,
+        935
+      ],
+      "text_safe_areas": [
+        [
+          65,
+          55,
+          1015,
+          325
+        ]
+      ],
+      "opaque_color_mean_difference": 0.352,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "samples/output/final_test_12/after_v1/feature3/images/test_bread_red_bean.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": false,
+        "no_visible_blank_card": true
+      },
+      "passed": false
+    },
+    {
+      "case_id": "test_bread_salt",
+      "category": "bread",
+      "product_name_ko": "소금빵",
+      "request_mode": "template_only",
+      "menu_category": "bread",
+      "image_purpose": "copy_later",
+      "text_space": "bottom",
+      "style_template_id": "promo",
+      "style_template_label": "프로모션 팝",
+      "resolved_settings": {
+        "background_mood": "vivid_cheerful",
+        "color_tone": "white_cream",
+        "product_position": "right",
+        "product_size": "large",
+        "margin": "default",
+        "include_shadow": true
+      },
+      "product_box": [
+        125,
+        121,
+        955,
+        659
+      ],
+      "text_safe_areas": [
+        [
+          65,
+          755,
+          1015,
+          1025
+        ]
+      ],
+      "opaque_color_mean_difference": 0.2201,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "samples/output/final_test_12/after_v1/feature3/images/test_bread_salt.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": true,
+        "no_visible_blank_card": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "test_dessert_fruit_tart",
+      "category": "dessert",
+      "product_name_ko": "과일 타르트",
+      "request_mode": "template_only",
+      "menu_category": "dessert",
+      "image_purpose": "image_only",
+      "text_space": "none",
+      "style_template_id": "berry",
+      "style_template_label": "딸기 크림",
+      "resolved_settings": {
+        "background_mood": "warm_soft",
+        "color_tone": "pink_lavender",
+        "product_position": "right",
+        "product_size": "default",
+        "margin": "default",
+        "include_shadow": true
+      },
+      "product_box": [
+        130,
+        234,
+        950,
+        895
+      ],
+      "text_safe_areas": [],
+      "opaque_color_mean_difference": 0.4333,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "samples/output/final_test_12/after_v1/feature3/images/test_dessert_fruit_tart.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": true,
+        "no_visible_blank_card": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "test_dessert_mango_bingsu",
+      "category": "dessert",
+      "product_name_ko": "망고 빙수",
+      "request_mode": "template_only",
+      "menu_category": "dessert",
+      "image_purpose": "copy_later",
+      "text_space": "left",
+      "style_template_id": "promo",
+      "style_template_label": "프로모션 팝",
+      "resolved_settings": {
+        "background_mood": "vivid_cheerful",
+        "color_tone": "white_cream",
+        "product_position": "right",
+        "product_size": "large",
+        "margin": "default",
+        "include_shadow": true
+      },
+      "product_box": [
+        475,
+        326,
+        1025,
+        843
+      ],
+      "text_safe_areas": [
+        [
+          55,
+          75,
+          455,
+          1005
+        ]
+      ],
+      "opaque_color_mean_difference": 0.043,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "samples/output/final_test_12/after_v1/feature3/images/test_dessert_mango_bingsu.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": false,
+        "no_visible_blank_card": true
+      },
+      "passed": false
+    },
+    {
+      "case_id": "test_dessert_mont_blanc",
+      "category": "dessert",
+      "product_name_ko": "몽블랑",
+      "request_mode": "template_only",
+      "menu_category": "dessert",
+      "image_purpose": "copy_later",
+      "text_space": "right",
+      "style_template_id": "night",
+      "style_template_label": "프리미엄 나이트",
+      "resolved_settings": {
+        "background_mood": "calm_premium",
+        "color_tone": "dark_gold",
+        "product_position": "right",
+        "product_size": "default",
+        "margin": "wide",
+        "include_shadow": true
+      },
+      "product_box": [
+        55,
+        276,
+        605,
+        894
+      ],
+      "text_safe_areas": [
+        [
+          625,
+          75,
+          1025,
+          1005
+        ]
+      ],
+      "opaque_color_mean_difference": 0.1196,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "samples/output/final_test_12/after_v1/feature3/images/test_dessert_mont_blanc.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": true,
+        "no_visible_blank_card": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "test_dessert_pavlova",
+      "category": "dessert",
+      "product_name_ko": "파블로바",
+      "request_mode": "template_only",
+      "menu_category": "dessert",
+      "image_purpose": "copy_later",
+      "text_space": "auto",
+      "style_template_id": "cream",
+      "style_template_label": "미니멀 크림",
+      "resolved_settings": {
+        "background_mood": "warm_soft",
+        "color_tone": "white_cream",
+        "product_position": "center",
+        "product_size": "default",
+        "margin": "wide",
+        "include_shadow": true
+      },
+      "product_box": [
+        125,
+        351,
+        955,
+        1019
+      ],
+      "text_safe_areas": [
+        [
+          65,
+          55,
+          1015,
+          325
+        ]
+      ],
+      "opaque_color_mean_difference": 0.0292,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "samples/output/final_test_12/after_v1/feature3/images/test_dessert_pavlova.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": true,
+        "no_visible_blank_card": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "test_drink_black_sesame",
+      "category": "drink",
+      "product_name_ko": "흑임자 라떼",
+      "request_mode": "template_only",
+      "menu_category": "iced_drink",
+      "image_purpose": "copy_later",
+      "text_space": "left",
+      "style_template_id": "night",
+      "style_template_label": "프리미엄 나이트",
+      "resolved_settings": {
+        "background_mood": "calm_premium",
+        "color_tone": "dark_gold",
+        "product_position": "right",
+        "product_size": "default",
+        "margin": "wide",
+        "include_shadow": true
+      },
+      "product_box": [
+        475,
+        388,
+        1025,
+        782
+      ],
+      "text_safe_areas": [
+        [
+          55,
+          75,
+          455,
+          1005
+        ]
+      ],
+      "opaque_color_mean_difference": 0.3091,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "samples/output/final_test_12/after_v1/feature3/images/test_drink_black_sesame.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": false,
+        "no_visible_blank_card": true
+      },
+      "passed": false
+    },
+    {
+      "case_id": "test_drink_cappuccino",
+      "category": "drink",
+      "product_name_ko": "카푸치노",
+      "request_mode": "template_only",
+      "menu_category": "hot_drink",
+      "image_purpose": "image_only",
+      "text_space": "none",
+      "style_template_id": "clean",
+      "style_template_label": "클린 화이트",
+      "resolved_settings": {
+        "background_mood": "bright_clean",
+        "color_tone": "white_cream",
+        "product_position": "right",
+        "product_size": "large",
+        "margin": "default",
+        "include_shadow": false
+      },
+      "product_box": [
+        130,
+        269,
+        950,
+        861
+      ],
+      "text_safe_areas": [],
+      "opaque_color_mean_difference": 0.1397,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "samples/output/final_test_12/after_v1/feature3/images/test_drink_cappuccino.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": false,
+        "no_visible_blank_card": true
+      },
+      "passed": false
+    },
+    {
+      "case_id": "test_drink_earl_grey",
+      "category": "drink",
+      "product_name_ko": "얼그레이 밀크티",
+      "request_mode": "template_only",
+      "menu_category": "hot_drink",
+      "image_purpose": "copy_later",
+      "text_space": "bottom",
+      "style_template_id": "natural",
+      "style_template_label": "내추럴 베이커리",
+      "resolved_settings": {
+        "background_mood": "warm_soft",
+        "color_tone": "beige_brown",
+        "product_position": "center",
+        "product_size": "large",
+        "margin": "default",
+        "include_shadow": true
+      },
+      "product_box": [
+        301,
+        55,
+        779,
+        725
+      ],
+      "text_safe_areas": [
+        [
+          65,
+          755,
+          1015,
+          1025
+        ]
+      ],
+      "opaque_color_mean_difference": 0.0469,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "samples/output/final_test_12/after_v1/feature3/images/test_drink_earl_grey.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": true,
+        "no_visible_blank_card": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "test_drink_watermelon",
+      "category": "drink",
+      "product_name_ko": "수박 주스",
+      "request_mode": "template_only",
+      "menu_category": "iced_drink",
+      "image_purpose": "image_only",
+      "text_space": "none",
+      "style_template_id": "clean",
+      "style_template_label": "클린 화이트",
+      "resolved_settings": {
+        "background_mood": "bright_clean",
+        "color_tone": "white_cream",
+        "product_position": "right",
+        "product_size": "large",
+        "margin": "default",
+        "include_shadow": false
+      },
+      "product_box": [
+        277,
+        105,
+        803,
+        1024
+      ],
+      "text_safe_areas": [],
+      "opaque_color_mean_difference": 0.4567,
+      "former_card_edge_mean_difference": 0.0,
+      "output_path": "samples/output/final_test_12/after_v1/feature3/images/test_drink_watermelon.png",
+      "checks": {
+        "shape_preserved": true,
+        "color_preserved": true,
+        "position_applied": true,
+        "size_applied": true,
+        "product_not_cropped": true,
+        "preview_matches_final": true,
+        "output_is_1080_square": true,
+        "text_safe_area_reserved": true,
+        "template_recommended_for_category": true,
+        "no_visible_blank_card": true
+      },
+      "passed": true
+    }
+  ]
+}

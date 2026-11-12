@@ -1,0 +1,56 @@
+[
+  {
+    "case_id": "01_strawberry_latte",
+    "category": "음료",
+    "product_name_ko": "딸기 라떼",
+    "image_filename": "01_strawberry_latte_sketch.png",
+    "request_ko": "딸기 과육이 보이는 시원한 딸기 라떼로 만들어주세요. 밝은 여름 자연광을 사용하고 왼쪽 위에는 상품이나 소품을 두지 말고 주변 배경이 자연스럽게 이어지는 단순한 여백을 남겨주세요.",
+    "request_en": "Create a chilled strawberry latte in a tall clear glass with visible strawberry pieces and creamy milk layers. Use bright summer daylight. Leave the upper-left free of products and props as a simple natural continuation of the surrounding background for later copy placement, with no box, panel, frame, sign, or overlay.",
+    "seed": 4101
+  },
+  {
+    "case_id": "02_lemon_soda",
+    "category": "음료",
+    "product_name_ko": "레몬에이드",
+    "image_filename": "02_lemon_soda_sketch.png",
+    "request_ko": "탄산감이 느껴지는 시원한 레몬에이드로 만들어주세요. 맑고 청량한 여름 분위기로 연출하고 오른쪽에는 상품이나 소품을 두지 말고 주변 배경이 자연스럽게 이어지는 단순한 여백을 남겨주세요.",
+    "request_en": "Create a cold sparkling lemonade with clear carbonation, ice, and fresh lemon slices. Use a bright refreshing summer mood. Leave the right side free of products and props as a simple natural continuation of the surrounding background for later copy placement, with no box, panel, frame, sign, or overlay.",
+    "seed": 4102
+  },
+  {
+    "case_id": "03_slice_cake",
+    "category": "디저트",
+    "product_name_ko": "딸기 생크림 케이크",
+    "image_filename": "03_slice_cake_sketch.png",
+    "request_ko": "생딸기와 부드러운 생크림이 올라간 케이크 한 조각으로 만들어주세요. 밝은 우드 테이블과 따뜻한 오후 자연광을 사용하고 오른쪽 위에는 주변 배경이 자연스럽게 이어지는 단순한 여백을 남겨주세요.",
+    "request_en": "Create one appetizing slice of strawberry shortcake topped with fresh strawberries and soft whipped cream. Place it on a bright wooden table in warm afternoon daylight. Leave the upper-right as a simple natural continuation of the surrounding background for later copy placement, with no box, panel, frame, sign, or overlay.",
+    "seed": 4103
+  },
+  {
+    "case_id": "04_caramel_pudding",
+    "category": "디저트",
+    "product_name_ko": "캐러멜 푸딩",
+    "image_filename": "04_caramel_pudding_sketch.png",
+    "request_ko": "윤기 나는 캐러멜 소스가 흐르는 푸딩으로 만들어주세요. 차분한 카페 조명과 짙은 나무 테이블 분위기로 연출하고 상단에는 주변 배경이 자연스럽게 이어지는 단순한 여백을 남겨주세요.",
+    "request_en": "Create a glossy caramel pudding with caramel sauce flowing naturally over the top. Use calm cafe lighting and a dark wooden tabletop. Leave the upper area as a simple natural continuation of the surrounding background for later copy placement, with no box, panel, frame, sign, or overlay.",
+    "seed": 4104
+  },
+  {
+    "case_id": "05_salt_bread",
+    "category": "빵",
+    "product_name_ko": "소금빵",
+    "image_filename": "05_salt_bread_sketch.png",
+    "request_ko": "노릇하게 갓 구운 소금빵 세 개로 만들어주세요. 따뜻한 아침 햇살과 담백한 베이커리 분위기로 연출하고 왼쪽 위에는 주변 배경이 자연스럽게 이어지는 단순한 여백을 남겨주세요.",
+    "request_en": "Create exactly three freshly baked Korean salt breads with golden crisp crusts and a light butter sheen. Use warm morning sunlight and a clean understated bakery atmosphere. Leave the upper-left as a simple natural continuation of the surrounding background for later copy placement, with no box, panel, frame, sign, or overlay.",
+    "seed": 4105
+  },
+  {
+    "case_id": "06_cream_bun",
+    "category": "빵",
+    "product_name_ko": "우유 크림빵",
+    "image_filename": "06_cream_bun_sketch.png",
+    "request_ko": "부드러운 우유 크림이 풍성하게 보이는 크림빵으로 만들어주세요. 깨끗한 흰 테이블과 부드러운 자연광을 사용하고 오른쪽 위에는 주변 배경이 자연스럽게 이어지는 단순한 여백을 남겨주세요.",
+    "request_en": "Create a milk cream bun cut open so the generous soft white cream filling is clearly visible. Use a clean white tabletop and soft natural daylight. Leave the upper-right as a simple natural continuation of the surrounding background for later copy placement, with no box, panel, frame, sign, or overlay.",
+    "seed": 4106
+  }
+]
