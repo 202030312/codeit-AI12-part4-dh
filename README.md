@@ -23,6 +23,12 @@ SNS 이미지를 디자인하는 데 많은 시간과 비용을 사용합니다.
 
 **[최종 보고서 PDF 다운로드](docs/report/store_onecut_final_report.pdf)**
 
+## 협업일지
+
+프로젝트 진행 과정과 작업 내용을 정리한 협업일지입니다.
+
+**[Notion 협업일지 보기](https://app.notion.com/p/4172a4323435802fa193edeeae309f0c)**
+
 ## 주요 기능
 
 | 기능 | 설명 |
